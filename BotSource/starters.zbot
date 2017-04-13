@@ -1,0 +1,21 @@
+
+<hvordan_går_det>
+: Hvordan går det?
+! answer
+{
+  > %godt
+  : Fremragende.
+  
+  > %dårligt
+  : Ærgerligt. Livet er fyldt med modstand
+
+  > +
+  ! weight 0.5
+  : Er det så godt eller skidt?
+  ! answer
+  {
+    > +
+    : Ser man det.
+    ! continue
+  }
+}

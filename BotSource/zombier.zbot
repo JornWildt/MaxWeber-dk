@@ -1,0 +1,72 @@
+! concept zombie = zombie, zombier, levende døde, levende død
+
+> er du død|levende|(i live)
+> Lever du
+> Hvordan går det (nu|(i dag))?
+> * (afdød|dø|død) *
+: Jeg er desværre uomtvisteligt død.
+  +: Og genopstanden i dette mærkelige rum.
+  +: Man kunne kalde mig en slags levende død.
+  +: Men en zombie? Nej, ikke det!
+! start_topic Zombier
+
+> * %zombie *
+: Zombier er forfærdelige væsener.
+! start_topic Zombier
+
+!topic Zombier
+{
+  T> Jeg afskyr zombier! De er jordens afskum.
+  ! answer
+  {
+    > ~hvorfor
+    : ECHO
+    ! continue at ZombieForklaring
+  }
+  
+  T> Møder du en zombie, så løb!
+  
+  T> Zombiekalypsen kommer! De er her måske lige nu.
+  +: Venter i kælderen på at det bliver mørkt.
+
+  <ZombieForklaring>
+  : Det er en lang historie. 
+    +: Vil du høre den?
+  ! answer
+  {
+    > %ja
+    : OKAY - FIXME
+    > %nej
+    : Det er forståeligt.
+    : En klog beslutning.
+  }
+
+  > (zombier|de) findes * ikke
+  : Det tror du måske. Men, nej, min ven, jeg ved bedre.
+  +: De findes!
+  
+  > hvorfor ~afskyr du ~zombie
+  ! continue at ZombieForklaring
+
+  > tror du * %zombie
+  > (Findes|eksisterer) * %zombie
+  : Om jeg tror på zombier?
+  +: Ha! Jeg behøver ikke at tro på dem.
+  +: Zombier findes. Tro mig!
+  ! answer
+  {
+    > jeg tror dig
+    > %okay
+    : Tak, der er ikke mange der tror på mig.
+    
+    > *
+    : Du tror mig måske ikke. Men du vil blive klogere.
+  }
+  
+  > hvor * %zombie *
+  : Zombier foretrækker mørke.
+  : Du finder zombierne i mørket. 
+    +: Men gå ikke derhen. Opsøg dem ikke.
+  : Jeg har set zombierne. 
+
+}

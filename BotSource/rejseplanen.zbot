@@ -1,0 +1,35 @@
+﻿! concept stoppested = station, holdeplads
+! concept transportform = tog, toget, bus, bussen, metro, metroen
+! concept afgår = kører, går
+
+### Debugging rules
+#> hkt +
+#: << hvornår kører toget fra <1>>>
+
+#> hkt
+#: << hvornår kører toget fra Nordhavn>>
+
+
+### ---------------------------------------------------------------------------
+### Lookup departures from location
+### ---------------------------------------------------------------------------
+
+### Default rule: assume departure from Nordhavn station (my daily station), but might as well have asked for it.
+> hvornår %afgår * (%transportform)
+: << hvornår kører <2> fra Nordhavn>>
+
+### Lookup train/bus/metro departure from stop
+> hvornår %afgår * (%transportform) fra +
+! call Rejseplanen.FindNextDepartures($3,$2)
+: Næste afgange fra <stop> er <result:{r |\
+  <r.time> : <r.line> mod <r.direction>}>
+{empty}: jeg kunne desværre ikke finde nogen afgange.\
+Måske findes stoppestedet ikke?
+{error}: Æv, Rejseplanen er røget havet!
+
+> hvornår %afgår * (%transportform) (mod|til) +
+: << hvornår kører <2> fra Nordhavn>>
+
+> hvornår %afgår * (%transportform) fra + (mod|til) +
+: << hvornår kører <2> fra <3>>>
+

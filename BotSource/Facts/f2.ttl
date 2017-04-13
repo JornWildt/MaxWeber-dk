@@ -1,0 +1,27 @@
+﻿@base <http://cbrain.com/f2/rdf-schema/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<sag>
+  a <f2begreb>;
+  rdfs:label "Sag";
+  dcterms:abstract "En sag er det fælles omdrejningspunkt for rækken af sagsakter.".
+
+<akt>
+  a <f2begreb>;
+  rdfs:label "Akt";
+  dcterms:abstract "Det fuldt udviklede bureaukrati arbejder præcist, hurtigt, og dets resultater er entydige og kontrollerbare gennem akter.".
+
+<dokument>
+  a <f2begreb>;
+  rdfs:label "Dokument";
+  dcterms:abstract "Forvaltningen er baseret på skriftlige dokumenter organiseret i akter og sager.".
+
+<part>
+  a <f2begreb>;
+  rdfs:label "Part";
+  dcterms:abstract "En part repræsenter en person eller en organisatorisk, juridisk enhed.".
+
+<f2begreb>
+  rdfs:label "F2 begreb".
+

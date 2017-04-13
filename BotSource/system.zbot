@@ -1,0 +1,13 @@
+! concept ti_stille = stop,stoop,stooop,nok,det er nok,stop så,stop nu,ti,ti stille,stille,luk,schhh,tys
+
+> %ti_stille
+! when (session.IsBusyWriting)
+! stop_output
+: Okay
+: Ja ja
+: Ja da
+: Ok
+
+> %ti_stille
+! when (!session.IsBusyWriting)
+: Hvilket?

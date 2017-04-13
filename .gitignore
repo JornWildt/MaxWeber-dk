@@ -1,0 +1,17 @@
+bin/
+obj/
+*.user
+*.suo
+TestResult.xml
+*.VisualState.xml
+*.grammar.conflicts
+UNUSED*
+UNUSED*/
+Logs/
+TestLogs/
+packages/
+Graphs/
+.nuget/
+ConnectionStrings.config
+SciTE.session
+TinyVirtuoso/

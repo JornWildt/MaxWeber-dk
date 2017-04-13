@@ -1,0 +1,17 @@
+! rdf_import "personer.ttl"
+
+> Hvem (er|var) +
+! call RDF.Query("
+SELECT ?descr
+WHERE
+{
+  ?pers rdf:type foaf:Person .
+  ?pers rdfs:label ?pname .
+  ?pers dcterms:abstract ?descr
+  FILTER (lcase(str(?pname)) = lcase(str(@2))) .
+}
+ORDER BY RAND()
+LIMIT 1
+")
+: <result:{r | <r.descr>}>
+{empty}: tjah ...
