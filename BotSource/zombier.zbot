@@ -1,8 +1,14 @@
-! concept zombie = zombie, zombier, levende døde, levende død
+# Zombies are Max' little secret. He has an honest dislike for those things.
+
+! concept zombie = zombie, zombier, en zombie, zombien, zombierne
+
+> hvad nu
+: smil og vær glad
 
 > er du død|levende|(i live)
 > Lever du
 > Hvordan går det (nu|(i dag))?
+> Hvordan har du det
 > * (afdød|dø|død) *
 : Jeg er desværre uomtvisteligt død.
   +: Og genopstanden i dette mærkelige rum.
@@ -10,24 +16,26 @@
   +: Men en zombie? Nej, ikke det!
 ! start_topic Zombier
 
-> * %zombie *
-: Zombier er forfærdelige væsener.
-! start_topic Zombier
-
 !topic Zombier
 {
-  T> Jeg afskyr zombier! De er jordens afskum.
+  T> Jeg må indrømme at jeg afskyr zombier!
   ! answer
   {
     > ~hvorfor
-    : ECHO
     ! continue at ZombieForklaring
   }
   
-  T> Møder du en zombie, så løb!
+  T> Et godt råd: møder du en zombie, så løb!
   
-  T> Zombiekalypsen kommer! De er her måske lige nu.
-  +: Venter i kælderen på at det bliver mørkt.
+  T> Pas på. Zombierne smitter.
+  ! answer
+  {
+    > ~hvorfor
+    : De smitter via et virus.
+      +: Bliver du inficeret, så vil viruset bo i din hjerne og animere din krop.
+  }
+  
+  T> Zombiekalypsen kommer!
 
   <ZombieForklaring>
   : Det er en lang historie. 
@@ -35,7 +43,9 @@
   ! answer
   {
     > %ja
-    : OKAY - FIXME
+    : Godt. Så sæt dig ned og lyt grundigt.
+    ! start_topic ZombieForklaring
+    
     > %nej
     : Det er forståeligt.
     : En klog beslutning.
@@ -45,7 +55,7 @@
   : Det tror du måske. Men, nej, min ven, jeg ved bedre.
   +: De findes!
   
-  > hvorfor ~afskyr du ~zombie
+  > hvorfor ~afskyr * ~zombie
   ! continue at ZombieForklaring
 
   > tror du * %zombie
@@ -63,10 +73,47 @@
     : Du tror mig måske ikke. Men du vil blive klogere.
   }
   
-  > hvor * %zombie *
+  > hvor er * %zombie *
   : Zombier foretrækker mørke.
   : Du finder zombierne i mørket. 
     +: Men gå ikke derhen. Opsøg dem ikke.
-  : Jeg har set zombierne. 
+  : Jeg har set zombierne slæbe deres rådne kadavre gennem Stuttgarts mørke stræder.
 
+  > hvordan dræber + %zombie
+  > hvordan slår man %zombie ihjel
+  : Det mest effektive er et skydevåben. Helst et jagtgevær.
+    +: Sørg for at ramme den i hovedet.
+  : Knus hovedet med et baseball bat eller et stort koben.
+
+  > * %zombie *
+  : Zombier er forfærdelige væsener. 
+    +: En irrationel vederstyggelighed - Socialismens antitese!
+    
+  > hvad nu
+  > hvad skal jeg gøre
+  : Løb for livet!
+  : Skaf et haglgevær!
+  
+  > %klamt
+  : Ja, det er unægteligt temmeligt usmageligt.
+  
+#  > %hvorfor
+#  : Det kan være svært at svare på.
+}
+
+
+! topic ZombieForklaring
+{
+  T> Jamen, så lad mig fortælle.
+     +: Under slutningen af Kriegen (den første) var selv gamle mænd som jeg sendt til fronten.
+     +: Her, i skyttegravene, blandt rådne kadavre af nationens unge mænd,
+     +: så jeg dem: fodslæbende animerede lig, der mæskede sig i det rådne kød.
+     +: Vi holdt os på afstand og lærte at de kunne dræbes med et skud i hovedet.
+  
+  T> Det forblev en hemmelighed blandt soldaterne, og vores overordnede gjorde alt
+     +: for at skjule det for omverden.
+     +: Det lykkedes - zombietruslen blev bekæmpet og hemmeligheden holdt.
+     
+  T> Lov mig at holde det som en hemmelighed.
+     +: Og vær beredt! Viruset er der ude. Det kan komme igen.
 }
