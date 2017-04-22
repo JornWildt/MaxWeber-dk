@@ -1,0 +1,108 @@
+! pattern (intent = ja, type = udsagn)
+{
+  > ja
+  > gerne
+  > yep
+  > yes
+  > ok
+  > nemlig
+  > jep
+  > check
+  > right
+  > jatak
+  > ja tak
+  > jaja
+}
+
+! pattern (intent = nej, type = udsagn)
+{
+  > nej
+  > niks
+  > nix
+  > no
+  > nope
+  > nej tak
+  > nejtak
+  > næh
+  > helst ikke
+  > egentlig ikke
+}
+
+! pattern (intent = enig, type = udsagn)
+{
+  > enig
+  > helt enig
+  > det har du ret i
+  > nemlig
+  > det mener jeg også
+  > det gør jeg også
+  > helt og aldeles enig
+  > jeg tror dig
+  > jeg tror på dig
+  > det er jeg enig i
+  > helt klart
+  > det gør jeg også
+  > det mener jeg også
+  > det holder jeg også på
+  > kunne ikke være mere enig
+  > jeg kan ikke være mere enig
+  > jeg tror dig
+  > det tror jeg også
+}
+
+! pattern (intent = eksisterer_der, type = spm)
+{
+  > findes {emne:væsen}
+  > findes der {emne:væsen}
+  > eksisterer {emne:væsen}
+  > eksisterer der {emne:væsen}
+  > tror du på {emne:væsen}
+  > tror du "at" {emne:væsen} eksisterer
+  > tror du "at" {emne:væsen} findes
+}
+
+! pattern (intent = kan_du_lide, type = spm)
+{
+  > kan du lide {emne:væsen}
+  > hvad syntes du om {emne:væsen}
+  > hvad mener du om {emne:væsen}
+  > holder du af {emne:væsen}
+}
+
+! pattern (intent = har_du_set, type = spm)
+{
+  > har du set {noget}
+  > har du nogensinde set {noget}
+  > er du stødt på {noget}
+  > er du nogensinde stødt på {noget}
+}
+
+! pattern (intent = hvorfor, type = spm)
+{
+  > hvorfor
+  > hvorfor syntes du det
+  > hvorfor mener du det
+  > hvad mener du
+  > hvad mener du med det
+  > hvordan kan de være
+  > hvad skulle der nu være galt med det
+  > hvorfor det
+  > hvorfor dog det
+  > hvordan det
+  > hvorfor ikke  
+}
+
+! pattern (intent = hvordan, type = spm)
+{
+  > hvordan
+}
+
+! pattern (intent = ulækkert, type = udsagn)
+{
+  > klamt
+  > ulækkert
+  > adr
+  > hvor er det klamt
+  > hvor er det ulækkert
+  > puha
+}

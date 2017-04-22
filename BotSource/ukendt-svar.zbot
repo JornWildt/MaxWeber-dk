@@ -1,5 +1,5 @@
 > *
-! weight 0.5
+! weight 0.6
 #: Hmmm
 #: Kan du uddybe det?
 #: Og med det vil du sige?
@@ -24,3 +24,11 @@
 +: Det er selvfølgelig det sidste som sker for de fleste.
 +: Trist tendens siger jeg.
 
+> *
+! weight 0.5
+! repeatable
+: Hmmmm
+: Aha
+: Nåh
+: Der kan man se
+: Tjah

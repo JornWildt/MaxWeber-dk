@@ -1,28 +1,33 @@
 # Zombies are Max' little secret. He has an honest dislike for those things.
 
+! entities (væsen)
+{
+  "zombie"
+}
+
 ! concept zombie = zombie, zombier, en zombie, zombien, zombierne
+! concept dræbe = dræbe, dræber, nakke, nakker, aflive, afliver, myrde, myrder, henrette, henretter, kvæle, kvæler, likvidere, likviderer
 
-> hvad nu
-: smil og vær glad
 
-> er du død|levende|(i live)
-> Lever du
-> Hvordan går det (nu|(i dag))?
-> Hvordan har du det
-> * (afdød|dø|død) *
+>> { intent = lever_du }
 : Jeg er desværre uomtvisteligt død.
   +: Og genopstanden i dette mærkelige rum.
   +: Man kunne kalde mig en slags levende død.
   +: Men en zombie? Nej, ikke det!
+! not_repeatable
 ! start_topic Zombier
 
 !topic Zombier
 {
-  T> Jeg må indrømme at jeg afskyr zombier!
+  T> Jeg må sige at jeg afskyr zombier. De er nogle fæle væsener, 
+  + :ganske udenfor al logik og rationalitet.
   ! answer
   {
-    > ~hvorfor
+    >> { intent = hvorfor }
     ! continue at ZombieForklaring
+    
+    >> { intent = enig }
+    : Ja, det er fæle og afskyelige væsner!
   }
   
   T> Et godt råd: møder du en zombie, så løb!
@@ -30,23 +35,26 @@
   T> Pas på. Zombierne smitter.
   ! answer
   {
-    > ~hvorfor
+    >> { intent = hvorfor }
     : De smitter via et virus.
       +: Bliver du inficeret, så vil viruset bo i din hjerne og animere din krop.
   }
   
   T> Zombiekalypsen kommer!
+  
+  T> Og nu, min ven, skal vi finde et mere fredeligt emne.
 
+# FIXME: må ikke kunne startes med bruger-input, kun programatisk!
   <ZombieForklaring>
   : Det er en lang historie. 
     +: Vil du høre den?
   ! answer
   {
-    > %ja
+    >> { intent = ja }
     : Godt. Så sæt dig ned og lyt grundigt.
     ! start_topic ZombieForklaring
     
-    > %nej
+    >> { intent = nej }
     : Det er forståeligt.
     : En klog beslutning.
   }
@@ -55,18 +63,16 @@
   : Det tror du måske. Men, nej, min ven, jeg ved bedre.
   +: De findes!
   
-  > hvorfor ~afskyr * ~zombie
+  > hvorfor %afskyr * %zombie
   ! continue at ZombieForklaring
 
-  > tror du * %zombie
-  > (Findes|eksisterer) * %zombie
+  >> { intent = eksisterer_der, emne = "zombie" }
   : Om jeg tror på zombier?
   +: Ha! Jeg behøver ikke at tro på dem.
   +: Zombier findes. Tro mig!
   ! answer
   {
-    > jeg tror dig
-    > %okay
+    >> { intent = enig }
     : Tak, der er ikke mange der tror på mig.
     
     > *
@@ -79,32 +85,36 @@
     +: Men gå ikke derhen. Opsøg dem ikke.
   : Jeg har set zombierne slæbe deres rådne kadavre gennem Stuttgarts mørke stræder.
 
-  > hvordan dræber + %zombie
-  > hvordan slår man %zombie ihjel
+  >> { intent = hvordan_dræber, noget = zombie }
   : Det mest effektive er et skydevåben. Helst et jagtgevær.
     +: Sørg for at ramme den i hovedet.
   : Knus hovedet med et baseball bat eller et stort koben.
 
   > * %zombie *
+  ! weight 0.5
   : Zombier er forfærdelige væsener. 
     +: En irrationel vederstyggelighed - Socialismens antitese!
-    
+
+  # FIXME: kun hvis topic allerede er aktivt (kan ikke aktivere topic)
   > hvad nu
   > hvad skal jeg gøre
   : Løb for livet!
   : Skaf et haglgevær!
   
+  # FIXME: kun hvis topic allerede er aktivt (kan ikke aktivere topic)
   > %klamt
   : Ja, det er unægteligt temmeligt usmageligt.
   
-#  > %hvorfor
-#  : Det kan være svært at svare på.
+  # FIXME: kun hvis topic allerede er aktivt (kan ikke aktivere topic)
+  >> { intent = hvorfor }
+  : Det kan være svært at svare på. 
+    +: Det var en mærkelig tid, og der var meget vi ikke forstod.
 }
 
 
 ! topic ZombieForklaring
 {
-  T> Jamen, så lad mig fortælle.
+  T> Hør engang.
      +: Under slutningen af Kriegen (den første) var selv gamle mænd som jeg sendt til fronten.
      +: Her, i skyttegravene, blandt rådne kadavre af nationens unge mænd,
      +: så jeg dem: fodslæbende animerede lig, der mæskede sig i det rådne kød.
@@ -116,4 +126,5 @@
      
   T> Lov mig at holde det som en hemmelighed.
      +: Og vær beredt! Viruset er der ude. Det kan komme igen.
+  ! start_topic Zombier
 }

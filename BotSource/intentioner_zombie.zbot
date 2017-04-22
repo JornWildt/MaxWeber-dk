@@ -1,0 +1,13 @@
+! pattern (intent = lever_du, type = spm)
+{
+  > lever du
+  > er du i live
+  > er du død eller levende
+  > er du dødelig
+}
+
+! pattern (intent = hvordan_dræber, type = spm)
+{
+  > hvordan %dræbe man {noget}
+  > hvordan slår man {noget} ihjel
+}
