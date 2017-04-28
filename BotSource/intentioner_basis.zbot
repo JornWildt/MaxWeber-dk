@@ -50,15 +50,26 @@
   > det tror jeg også
 }
 
+! pattern (intent = hvad_er, type = spm)
+{
+  > hvad er {emne}
+  > hvad er {emne} for noget
+  > fortæl om {emne}
+  > fortæl mig om {emne}
+  > forklar {emne}
+  > kan du foreklare {emne} for mig
+  > sig noget om {emne}
+}
+
 ! pattern (intent = eksisterer_der, type = spm)
 {
-  > findes {emne:væsen}
-  > findes der {emne:væsen}
-  > eksisterer {emne:væsen}
-  > eksisterer der {emne:væsen}
-  > tror du på {emne:væsen}
-  > tror du "at" {emne:væsen} eksisterer
-  > tror du "at" {emne:væsen} findes
+  > findes {emne}
+  > findes der {emne}
+  > eksisterer {emne}
+  > eksisterer der {emne}
+  > tror du på {emne}
+  > tror du "at" {emne} eksisterer
+  > tror du "at" {emne} findes
 }
 
 ! pattern (intent = kan_du_lide, type = spm)

@@ -44,7 +44,6 @@
   
   T> Og nu, min ven, skal vi finde et mere fredeligt emne.
 
-# FIXME: må ikke kunne startes med bruger-input, kun programatisk!
   <ZombieForklaring>
   : Det er en lang historie. 
     +: Vil du høre den?
@@ -95,17 +94,14 @@
   : Zombier er forfærdelige væsener. 
     +: En irrationel vederstyggelighed - Socialismens antitese!
 
-  # FIXME: kun hvis topic allerede er aktivt (kan ikke aktivere topic)
   > hvad nu
   > hvad skal jeg gøre
   : Løb for livet!
   : Skaf et haglgevær!
   
-  # FIXME: kun hvis topic allerede er aktivt (kan ikke aktivere topic)
   > %klamt
   : Ja, det er unægteligt temmeligt usmageligt.
   
-  # FIXME: kun hvis topic allerede er aktivt (kan ikke aktivere topic)
   >> { intent = hvorfor }
   : Det kan være svært at svare på. 
     +: Det var en mærkelig tid, og der var meget vi ikke forstod.
