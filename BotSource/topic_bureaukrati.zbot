@@ -20,7 +20,16 @@
 {
   > *
   : Nåh, jamen så lad mig fortælle om dem.
-  ! start_topic bureaukrati
+  ! answer
+  {
+    >> { intent = nej }
+    : Jawohl, så vil jeg foretage mig noget andet.
+    
+    > +
+    ! weight 0.8
+    : Så gerne!
+    ! start_topic bureaukrati
+  }
 }
 
 > * %bureaukrati *

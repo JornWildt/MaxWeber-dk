@@ -1,3 +1,8 @@
+! entities (person)
+{
+  "du", "dig", "dine", "dit", "dig selv"
+}
+
 ! pattern (intent = ja, type = udsagn)
 {
   > ja
@@ -5,6 +10,7 @@
   > yep
   > yes
   > ok
+  > okay
   > nemlig
   > jep
   > check
@@ -12,6 +18,8 @@
   > jatak
   > ja tak
   > jaja
+  > helt sikkert
+  > absolut
 }
 
 ! pattern (intent = nej, type = udsagn)
@@ -26,6 +34,13 @@
   > næh
   > helst ikke
   > egentlig ikke
+  > absolut ikke
+  > bestemt ikke
+  > du kan rende mig
+  > du kan rende mig noget så grusomt
+  > skrid
+  > hold nu op
+  > stop
 }
 
 ! pattern (intent = enig, type = udsagn)
@@ -59,6 +74,28 @@
   > forklar {emne}
   > kan du foreklare {emne} for mig
   > sig noget om {emne}
+  > kender du {emne}
+}
+
+! pattern (intent = hvad_hedder, type = spm)
+{
+  > hvad hedder {emne}
+  > hvad er navnet på {emne}
+  > hvad er {emne} navn
+}
+
+! pattern (intent = hvem_er, type = spm)
+{
+  > hvem er {emne}
+  > fortæl mig hvem {emne} er
+  > fortæl om {emne}
+  > fortæl mig om {emne}
+}
+
+! pattern (intent = hvor_gammel_er, type = spm)
+{
+  > hvor gammel er {emne}
+  > hvor mange år er {emne}
 }
 
 ! pattern (intent = eksisterer_der, type = spm)

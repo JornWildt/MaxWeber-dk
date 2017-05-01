@@ -1,7 +1,16 @@
-> *
+
+>> { type = spm }
 ! weight 0.6
+! repeatable
+: Hvad får Dem til at spørge om det?
+: Det er jeg desværre ikke i stand til at forklare.
 : Hmmm
-: Kan du uddybe det?
+: Desværre, det ved jeg ikke
+
+#> *
+#! weight 0.5
+#: Hmmm
+#: Kan du uddybe det?
 #: Og med det vil du sige?
 #: Som jeg aktid har sagt, "Kultur" er en begrænset del af den meningsløse uendelighed af verden proces, et segment, som mennesket giver mening og betydning.
 #: Sandheden er Sandheden.
