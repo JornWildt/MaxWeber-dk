@@ -1,16 +1,15 @@
 ! concept bureaukrati = bureaukrati, bureaukratiet, bureaukrat
 
-#! define (bureakrati)
-! define
+! define (bureakrati)
 {
-  "bureaukrati": subst ("bureaukratiet", "bureaukratier", "bureaukratierne").
-  "bureaukrat": subst (bureaukrat, bureaukrater, bureaukraterne).
-  "embedshierarki": subst (embedshierarkiet, embedshierarkierne).
-  "hierarki": subst ("hierarkiet", "hierarkier", "hierarkierne").
-  "embed": subst ("embedet", "embeder", "embederne").
-  "myndighed": subst (myndigheden, myndigheder, myndighederne).
-  "kontor": subst (kontoret, kontorer, kontorerne).
-  "afdeling": subst (afdelingen, afdelinger, afdelingerne).
+  "bureaukrati" ("bureaukratiet", "bureaukratier", "bureaukratierne"):.
+  "bureaukrat" (bureaukrat, bureaukrater, bureaukraterne):.
+  "embedshierarki" (embedshierarkiet, embedshierarkierne):.
+  "hierarki" ("hierarkiet", "hierarkier", "hierarkierne"):.
+  "embed" ("embedet", "embeder", "embederne"):.
+  "myndighed" (myndigheden, myndigheder, myndighederne):.
+  "kontor" (kontoret, kontorer, kontorerne):.
+  "afdeling" (afdelingen, afdelinger, afdelingerne):.
 }
 
 >> { intent = hvad_er, emne = bureakrati}

@@ -1,6 +1,6 @@
-! rdf_import "lande.ttl"
-! rdf_import "hovedstæder.ttl"
-! rdf_import "geografi.ttl"
+# ! rdf_import "lande.ttl"
+# ! rdf_import "hovedstæder.ttl"
+# ! rdf_import "geografi.ttl"
 
 > hvor (ligger|er) +
 ! call RDF.Query("

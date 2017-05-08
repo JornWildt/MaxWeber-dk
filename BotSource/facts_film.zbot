@@ -1,0 +1,13 @@
+! define (film)
+{
+  "De urørlige" (Intouchables):
+    beskrivelse: "Fransk komedie om milionæren Philipe og den småkriminelle Driss";
+    genre: drama, komedie;
+    instruktør: <Oliver Nakache>, <Eric Toledano>.
+
+  "Harry Potter":
+    beskrivelse: "En serie af film om troldmandsdrengen Harry Potter og hans liv på troldmandsskolen Hogwards";
+    genre: "fantasy";
+    instruktør: <Alfonso Cuarón>;
+    medvirkende: <Daniel Radcliffe>, <Rupert Grint>, <Emma Watson>.
+}

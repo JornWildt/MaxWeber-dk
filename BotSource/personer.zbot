@@ -1,4 +1,4 @@
-! rdf_import "personer.ttl"
+# ! rdf_import "personer.ttl"
 
 > Hvem (er|var) +
 ! call RDF.Query("

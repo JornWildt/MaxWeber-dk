@@ -1,0 +1,18 @@
+# Hvor gammel bliver en krokodille
+# Hvor stor er en elefant
+# Hvad er en næsehornsbille
+# Hvor findes|bor der løver
+# Hvilke dyr bor i asien
+
+! define (dyr)
+{
+  "Krokodille" (krokodillen, krokodiller, krokodillerne):
+    beskrivelse: "Det er store, kraftigt byggede, firbenlignende krybdyr med lange, flade snuder og øjne, ører og næsebor placeret øverst på hovedet. De svømmer godt og kan desuden bevæge sig på land.";
+    dyreklasse: krybdyr;
+    levested: <Afrika>, <Asien>, <Sydamerika>.
+    
+  "Elefant" (elefanten, elefanter, elefanterne):
+    beskrivelse: "";
+    dyreklasse: pattedyr;
+    levested: <Afrika>, <Indien>, <Asien>.
+}
