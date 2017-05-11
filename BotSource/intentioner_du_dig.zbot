@@ -1,0 +1,32 @@
+! pattern (intent = hvad_hedder_du, type = spm)
+{
+  > hvad hedder du
+  > hvad er dit navn
+  > hvad kaldes du
+}
+
+! pattern (intent = hvad_laver_du, type = spm)
+{
+  > hvad laver du
+  > hvad arbejder du med
+}
+
+! pattern (intent = hvem_er_du, type = spm)
+{
+  > hvem er du
+  > hvad er du for en
+}
+
+! pattern (intent = hvor_gammel_er_du, type = spm)
+{
+  > hvor gammel er du
+  > hvor mange år er du
+}
+
+! pattern (intent = hvor_bor_du, type = spm)
+{
+  > hvor bor du
+  > hvor lever du
+}
+
+

@@ -1,8 +1,3 @@
-! entities (person)
-{
-  "du", "dig", "dine", "dit", "dig selv"
-}
-
 ! pattern (intent = ja, type = udsagn)
 {
   > ja
@@ -65,7 +60,7 @@
   > det tror jeg også
 }
 
-! pattern (intent = hvad_er, type = spm)
+! pattern (intent = hvad_hvem_er, type = spm)
 {
   > hvad er {emne}
   > hvad er {emne} for noget
@@ -75,6 +70,11 @@
   > kan du foreklare {emne} for mig
   > sig noget om {emne}
   > kender du {emne}
+  > ved du hvad {emne} er
+  > har du hørt om {emne}
+  > hvem er {emne}
+  > ved du hvem {emne} er
+  > fortæl mig hvem {emne} er
 }
 
 ! pattern (intent = hvad_hedder, type = spm)
@@ -84,18 +84,19 @@
   > hvad er {emne} navn
 }
 
-! pattern (intent = hvem_er, type = spm)
-{
-  > hvem er {emne}
-  > fortæl mig hvem {emne} er
-  > fortæl om {emne}
-  > fortæl mig om {emne}
-}
-
 ! pattern (intent = hvor_gammel_er, type = spm)
 {
   > hvor gammel er {emne}
   > hvor mange år er {emne}
+}
+
+! pattern (intent = hvor_er_det, type = spm)
+{
+  > hvor er det
+  > hvor er det henne
+  > hvor henne er det
+  > hvor ligger det
+  > hvor ligger det henne
 }
 
 ! pattern (intent = eksisterer_der, type = spm)
