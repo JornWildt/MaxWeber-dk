@@ -4,18 +4,6 @@
     kender: <cBrain>.
 }
 
->> { intent = hvad_hvem_er, emne = * }
-! call RDF.Query("
-SELECT ?name
-WHERE
-{
-  ?thing rdf:label ?name
-  FILTER (?name = <emne>)
-}
-")
-: Ja: <result:{r |<r.name>}; separator="", "">.
-# empty: nej!
-
 >> { intent = hvem_er_du }
 : Jeg hedder Max Weber. Afdød Professor i Økonomi og nu rådgiver hos cBrain.
 : Max Weber - den store Sociolog :-)

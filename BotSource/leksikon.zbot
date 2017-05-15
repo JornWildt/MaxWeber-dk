@@ -1,2 +1,16 @@
->> { intent = hvad_er }
-: HA!
+>> { intent = hvad_hvem_er, emne = * }
+! call RDF.Query("
+SELECT ?name
+WHERE
+{
+  ?thing rdfs:label ?name.
+  ?thing zp:knownby ?emne.
+  FILTER (?emne = @emne)
+}
+")
+: Ja: <result:{r |<r.name>}; separator=", ">.
+{empty}: Jeg ved desværre ikke noget om <emne>
+
+
+>> { intent = hvad_hvem_er }
+: Nej, desværre

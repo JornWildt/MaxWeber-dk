@@ -63,3 +63,19 @@
     
   "Fælles Kurs":.
 }
+
+! define (politiker, person)
+{
+  "Søren Pape Poulsen":.
+  "Mette Frederiksen":.
+  "Morten Østergaard":.
+  "Pia Olsen Dyhr":.
+  "Niels Højland":.
+  "Stig Grenov":.
+  "Ben Haddou":.
+  "Pernille Skipper":.
+  "Kristian Thulesen Dahl":.
+  "Anders Samuelsen":.
+  "Uffe Elbæk":.
+  "Henrik Stamer Hedin":.
+}

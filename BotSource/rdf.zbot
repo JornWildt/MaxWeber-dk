@@ -16,13 +16,13 @@
   }")
 : <result:{r | <r.s>, <r.p>, <r.o> <\\n> }>.
 
-> show all about +
+> show all rdf data about +
 ! call RDF.Query("
   select ?s ?p ?o
   where
   {
     ?s ?p ?o.
-    ?s rdfs:label ?name.
-    FILTER (?name = @1)
+    ?s zp:knownby ?n.
+    FILTER (?n = @1)
   }")
 : <result:{r | <r.s>, <r.p>, <r.o> <\\n> }>.
