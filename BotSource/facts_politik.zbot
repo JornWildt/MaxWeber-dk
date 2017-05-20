@@ -1,4 +1,4 @@
-! define (politiske_partier)
+! define (politisk_parti)
 {
   "Venstre": 
     partileder: <Lars Løkke Rasmussen>.
@@ -41,8 +41,6 @@
     
   "Retsforbundet":.
     
-  "Retsforbundet":.
-    
   "Bondepartiet":.
     
   "Dansk Samling":.
@@ -66,6 +64,7 @@
 
 ! define (politiker, person)
 {
+  "Lars Løkke Rasmussen":.
   "Søren Pape Poulsen":.
   "Mette Frederiksen":.
   "Morten Østergaard":.
@@ -79,3 +78,12 @@
   "Uffe Elbæk":.
   "Henrik Stamer Hedin":.
 }
+
+! define (type)
+{
+  politiker:
+    er: "er politiker.".
+  politisk_parti:
+    er: "er et politisk parti.".
+}
+

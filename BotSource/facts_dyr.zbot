@@ -7,12 +7,12 @@
 ! define (dyr)
 {
   "Krokodille" (krokodillen, krokodiller, krokodillerne):
-    beskrivelse: "Krokodillen er et stort, kraftigt bygget, firbenlignende krybdyr med lang, flad snude og øjne, ører og næsebor placeret øverst på hovedet. Krokodillen svømmer godt og kan desuden bevæge sig på land.";
+    intro: "Krokodillen er et stort, kraftigt bygget, firbenlignende krybdyr med lang, flad snude og øjne, ører og næsebor placeret øverst på hovedet. Krokodillen svømmer godt og kan desuden bevæge sig på land.";
     dyreklasse: krybdyr;
     levested: <Afrika>, <Asien>, <Sydamerika>.
     
   "Elefant" (elefanten, elefanter, elefanterne):
-    beskrivelse: "Elefanten er et stort";
+    intro: "Elefanten er et stort";
     dyreklasse: pattedyr;
     levested: <Afrika>, <Indien>, <Asien>.
 }
