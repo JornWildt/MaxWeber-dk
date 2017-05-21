@@ -1,5 +1,10 @@
 ! concept du = du, dig, de, deres
 
+! entities (personligt)
+{
+  > (din|dit|dine|deres) (mor|far|søster|søstre|bror|brødre)  
+}
+
 ! pattern (intent = hvad_hedder_du, type = spm)
 {
   > hvad hedder %du
@@ -17,6 +22,7 @@
 {
   > hvem er %du
   > hvad er %du for en
+  > fortæl om dig selv
 }
 
 ! pattern (intent = hvor_gammel_er_du, type = spm)
@@ -31,4 +37,12 @@
   > hvor lever %du
 }
 
-
+! pattern (intent = er_du_sikker, type = spm)
+{
+  > er du sikker
+  > er du sikker på det
+  > mener du det
+  > emenr du virkelig det
+  > er du helt sikker
+  > er du bombesikker
+}

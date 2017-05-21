@@ -64,7 +64,7 @@
 
 ! define (politiker, person)
 {
-  "Lars Løkke Rasmussen":.
+  "Lars Løkke Rasmussen" ("Lars Løkke"):.
   "Søren Pape Poulsen":.
   "Mette Frederiksen":.
   "Morten Østergaard":.

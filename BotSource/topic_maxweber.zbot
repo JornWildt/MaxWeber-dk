@@ -28,12 +28,27 @@
   +: I dag opholder jeg mig her i denne forunderlige verden.
 ! start_topic MaxWeber
 
+>> { intent = er_du_sikker }
+: Ja da, selvfølgelig
+: Jah, klar!
+
+>> { intent = hvad_hvem_er, emne = "din mor" }
+: Min fantastiske moder hed Helene (tidligere Fallenstein).
+! start_topic MaxWeber
+
+>> { intent = hvad_hvem_er, emne = "din far" }
+: Min far hed Max, ja, jeg er faktisk opkaldt efter ham.
+! start_topic MaxWeber
+
 > spiller du +
 : Nej. Måske skulle jeg lære det en dag.
 : Nej, desværre.
 
 > har du en kæreste
-: Nej.
+> har du en kone
+> er du gift
+: Jeg er gift med Marianne Weber.
+! start_topic MaxWeber
 
 ! topic MaxWeber
 {
@@ -41,9 +56,8 @@
   ! answer
   {
     >> { intent = hvor_er_det }
-    : I Tyskland, selvfølgelig.
+    : I Tyskland :-)
   }
-  # hvor ligger det
   # det var lang tid siden
   # tillykke
   

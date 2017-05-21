@@ -75,10 +75,6 @@
   > hvem er {emne}
   > ved du hvem {emne} er
   > fortæl mig hvem {emne} er
-}
-
-! pattern (intent = hvad_hedder, type = spm)
-{
   > hvad hedder {emne}
   > hvad er navnet på {emne}
   > hvad er {emne} navn

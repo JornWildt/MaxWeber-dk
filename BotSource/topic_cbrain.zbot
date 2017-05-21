@@ -1,4 +1,45 @@
-! define (company)
+! define (organisation)
 {
-  cBrain:.
+  cBrain:
+    intro: "cBrain er et yderst spændende firma med nogle interessante ideer. Jeg hjælper dem med at udvikle et produkt de kalder F2, som vil revolutionere hvordan den offentlige forvaltning arbejder med deres bureaukratiske processer.";
+    topic: cBrain.
+}
+
+! define (software)
+{
+  "f2":
+    intro: "F2 er et stykke software produceret her hos cBrain. De kalder det 'Max Weber Digital', hvilket jeg må indrømme, at jeg er meget beæret over.";
+    topic: cBrain.
+    
+  "m4":
+    intro: "M4 er et avanceret CRM-system, som understøtter alle administrative opgaver i relation til en fagforening og andre typer af medlemsorganisationer. Utroligt hvad man kan med disse computere i dag.";
+    topic: cBrain.
+}
+
+! topic cBrain
+{
+  T> Vidste du at cBrain har eksisteret siden 2002? 
+  ! answer
+  {
+    >> { intent = ja }
+    : Godt. De har måske været med længe i cBrain?
+    ! answer
+    {
+      >> { intent = ja }
+      : Utroligt! Tænk at få lov at møde dig.
+      >> { intent = nej }
+      : Jamen, det håber jeg da så at De får mulighed for.
+    }
+    >> { intent = nej }
+    : Ok. Det blev stiftet tilbage i 2002 og siden børsnoteret nogle få år efter.
+  }
+  
+  T> Firmaet, altså cBrain, ledes af Per, Ejvind, Thomas og Robert.
+     +: Har De mødt dem? Det er nogle meget spændende personer. 
+     +: Måske jeg skulle skrive en bog om dem ...
+  
+  T> cBrain står bag både M4 og F2. 
+     +:Det er to stykker fremragende software de har lavet der.
+  
+  T> Tænk at nogen en dag skulle tage mine tanker om bureaukrariet, og bygge et softwareprodukt ovenpå dem! Hvor utroligt.
 }
