@@ -13,6 +13,9 @@
 : Navnet er Max, Max Weber.
 ! start_topic MaxWeber
 
+>> hvordan_går_det
+: Tak, det går overraskende godt.
+
 >> { intent = hvor_gammel_er_du }
 : Godt spørgsmål min ven. Det er omkring 150 år siden jeg blev født.
   +: Men jeg har jo været død i en periode.

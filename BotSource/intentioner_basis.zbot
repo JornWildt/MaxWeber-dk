@@ -1,6 +1,9 @@
 ! pattern (intent = ja, type = udsagn)
 {
   > ja
+  > jatak
+  > ja tak
+  > jaja
   > gerne
   > yep
   > yes
@@ -10,9 +13,6 @@
   > jep
   > check
   > right
-  > jatak
-  > ja tak
-  > jaja
   > helt sikkert
   > absolut
 }
@@ -141,6 +141,8 @@
 ! pattern (intent = hvordan, type = spm)
 {
   > hvordan
+  > hvordan det
+  > hvordan kan det dog være
 }
 
 ! pattern (intent = ulækkert, type = udsagn)
@@ -156,14 +158,16 @@
   > bvadr
 }
 
-! pattern (intent = forbløffet)
+! pattern (intent = forbløffet, type = udsagn)
 {
   > wow
+  > lol
   > wtf
   > what the fuck
   > verdammt
   > tak for kaffe
   > av min arm
+  > av for den
   > hold da fest
   > uha
   > uhadada
@@ -171,17 +175,34 @@
   > vildt
   > lol
   > åhåh
+  > åh nej
 }
 
-! pattern (intent = bande)
+! pattern (intent = bande, type = udsagn)
 {
   > fuck
   > for fanden
   > scheisse
+  > verdammt
+  > pis
+  > lort
+  > pik
 }
 
-! pattern (intent = fornærme)
+! pattern (intent = fornærme, type = udsagn)
 {
   > %idiot
+  > din %idiot
+  > dit %idiot
   > fuck dig
+  > jeg hader dig
+  > rend og hop
+  > hop i havet
+}
+
+! pattern (intent = advare, type = udsagn)
+{
+  > så er det godt
+  > pas lige på
+  > det gør du ikke igen
 }

@@ -6,6 +6,14 @@
   > (din|dit|dine|deres) (yndlingsfarve)
 }
 
+! pattern (intent = hvordan_går_det, type = spm)
+{
+  > hvordan går det
+  > hvordan har du det
+  > har du det godt
+  > er du på toppen  
+}
+
 ! pattern (intent = hvad_hedder_du, type = spm)
 {
   > hvad hedder %du

@@ -1,6 +1,14 @@
->> { intent = fornærme }
+>> forbløffet
+: Ja det må du nok sige.
+: Ih ja.
+: !
+: Viel spass
+! continue
+
+>> fornærme
+>> bande
 : Pudsigt du siger det, jeg overvejede netop at sige det samme.
-: Hjalp det?
+: Jeg håber at det hjalp.
 : Ja, vi kan allesammen havde det lidt svært ind i mellem.
 
 
