@@ -3,6 +3,7 @@
 ! entities (personligt)
 {
   > (din|dit|dine|deres) (mor|far|søster|søstre|bror|brødre)  
+  > (din|dit|dine|deres) (yndlingsfarve)
 }
 
 ! pattern (intent = hvad_hedder_du, type = spm)

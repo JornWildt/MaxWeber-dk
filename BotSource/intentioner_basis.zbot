@@ -78,6 +78,7 @@
   > hvad hedder {emne}
   > hvad er navnet på {emne}
   > hvad er {emne} navn
+  > hvad mener du om {emne}
 }
 
 ! pattern (intent = hvor_gammel_er, type = spm)
@@ -108,10 +109,10 @@
 
 ! pattern (intent = kan_du_lide, type = spm)
 {
-  > kan du lide {emne:væsen}
-  > hvad syntes du om {emne:væsen}
-  > hvad mener du om {emne:væsen}
-  > holder du af {emne:væsen}
+  > kan du lide {emne}
+  > hvad syntes du om {emne}
+  > hvad mener du om {emne}
+  > holder du af {emne}
 }
 
 ! pattern (intent = har_du_set, type = spm)
@@ -150,4 +151,37 @@
   > hvor er det klamt
   > hvor er det ulækkert
   > puha
+  > yuck
+  > badr
+  > bvadr
+}
+
+! pattern (intent = forbløffet)
+{
+  > wow
+  > wtf
+  > what the fuck
+  > verdammt
+  > tak for kaffe
+  > av min arm
+  > hold da fest
+  > uha
+  > uhadada
+  > huh
+  > vildt
+  > lol
+  > åhåh
+}
+
+! pattern (intent = bande)
+{
+  > fuck
+  > for fanden
+  > scheisse
+}
+
+! pattern (intent = fornærme)
+{
+  > %idiot
+  > fuck dig
 }

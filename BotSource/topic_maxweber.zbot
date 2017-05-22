@@ -40,6 +40,10 @@
 : Min far hed Max, ja, jeg er faktisk opkaldt efter ham.
 ! start_topic MaxWeber
 
+>> { intent = hvad_hvem_er, emne = "din yndlingsfarve" }
+: Min yndlingsfarve siger du? Det må være brun.
+! start_topic MaxWeber
+
 > spiller du +
 : Nej. Måske skulle jeg lære det en dag.
 : Nej, desværre.
