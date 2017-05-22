@@ -4,6 +4,13 @@
 # Hvor findes|bor der løver
 # Hvilke dyr bor i asien
 
+! define (type)
+{
+  dyr:
+    er: "er et dyr.".
+}
+
+
 ! define (dyr)
 {
   "Krokodille" (krokodillen, krokodiller, krokodillerne):
@@ -12,7 +19,51 @@
     levested: <Afrika>, <Asien>, <Sydamerika>.
     
   "Elefant" (elefanten, elefanter, elefanterne):
-    intro: "Elefanten er et stort";
+    intro: "Elefanten er et stort gårt dyr med en lang snabel.";
     dyreklasse: pattedyr;
     levested: <Afrika>, <Indien>, <Asien>.
+    
+  "Delfin" (delfinen, delfiner, delfinerne):
+    intro: "Delfiner er havpattedyr, der minder meget om hvaler.";
+    dyreklasse: pattedyr.
+    
+  "Mus" (musen, mus, musene):
+    intro: "Mus er små nuttede væsner, som udgør den største gnaverfamilie.";
+    dyreklasse: pattedyr.
+    
+  "Rotte" (rotten, rotter, rotterne):
+    intro: "Rotter! Hæslige kræ, der lever i kloaker. Jeg bryder mig virkelig ikke om den slags dyr.";
+    dyreklasse: pattedyr.
+    
+  "Hjort" (hjorten, hjorte, hjortene):
+    intro: "Hjorte er en klasse af pattedyr (faktisk hovdyr) - herunder fx kronhjort, rådyr og dådyr.";
+    dyreklasse: pattedyr.
+    
+  "Kronhjort" (kronhjorten, kronhjorte, kronhjortene, krondyr, krondyret, kronvildt, kronvildet):
+    intro: "Kronhjorten er Danmarks største vildtlevende pattedyr - og et ualmindeligt smukt dyr, om jeg må sige det.";
+    dyreklasse: pattedyr.
+    
+  "Rådyr" (rådyret, rådyr, rådyrene):
+    intro: "Rådyret er den mindste hjorteart i Danmark.";
+    dyreklasse: pattedyr.
+    
+  "Dådyr" (dådyret, dådyr, dådyrene):
+    intro: "Dådyret er en middelstor hjort.";
+    dyreklasse: pattedyr.
+    
+  "Elg" (elgen, elge, elgene):
+    intro: "Et kæmpestort brunt dyr med gevir.";
+    dyreklasse: pattedyr.
+    
+  "Rensdyr" (rensdyret, rensdyr, rensdyrene):
+    intro: "Julemandens kane du ved ;-)";
+    dyreklasse: pattedyr.
+    
+  "Egern" (egernet, egern, egerne):
+    intro: "Egernet er endnu en af disse små fascinerende gnavere.";
+    dyreklasse: pattedyr.
+    
+  "Flagermus" (flagermusen, flagermus, flagermusene):
+    intro: "Flagermusen er et yderst interessant lille væsen. Det ligner en flyvende mus og finder dets føde med ultralyd.";
+    dyreklasse: pattedyr.
 }
