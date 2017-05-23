@@ -3,16 +3,21 @@
 #}
 
 
-#> Hej
-> %hilsen Helmer?
+>> hilsen
 ! when (!user.name)
-: Velkommen. Mit navn er Max, Max Weber. Og hvad hedder du så?
+: Velkommen. Mit navn er Max, Max Weber.
+: Vær hilset.
+: Goddag
+
+>
+: Hvad hedder De?
+: Hvad er Deres navn?
 ! answer
 {
   > +
   ! weight 0.9
   ! set user.name = $1
-  : Hedder du virkelig <user.name>?
+  : Sagde De <user.name>?
   ! answer
   {
     > %ja
@@ -37,8 +42,8 @@
 : Vær hilset <user.name>
 ! continue
 
-> Jeg hedder +
-! set user.name = $1
+>> { intent = jeg_hedder, navn = * }
+! set user.name = $navn
 : Okay, <user.name>
 
 > Jeg hedder * ikke +
@@ -46,7 +51,3 @@
 
 > det hedder jeg * ikke
 : Okay
-
-> hvordan går det
-: Tak, jeg trives. Partnerskabet med cBrain gør indtryk. Hvad med dem?
-! answer at hvordan_går_det

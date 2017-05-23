@@ -178,6 +178,32 @@
   > åh nej
 }
 
+! pattern (intent = skuffet, type = udsagn)
+{
+  > øv
+  > æv
+  > møg
+  > pis
+  > shit
+  > hvor ærgerligt
+}
+
+! pattern (intent = hilsen, type = udsagn)
+{
+  > godmorgen
+  > god morgen
+  > goddag
+  > godag
+  > god dag
+  > hej
+  > hejsa
+  > halløj
+  > hej med dig
+  > vær hilset
+  > dav
+  > davs
+}
+
 ! pattern (intent = bande, type = udsagn)
 {
   > fuck
@@ -187,6 +213,7 @@
   > pis
   > lort
   > pik
+  > shit
 }
 
 ! pattern (intent = fornærme, type = udsagn)
@@ -205,4 +232,10 @@
   > så er det godt
   > pas lige på
   > det gør du ikke igen
+}
+
+! pattern (intent = jeg_hedder, type = udsagn)
+{
+  > jeg hedder {navn}
+  > mit navn er {navn}
 }
