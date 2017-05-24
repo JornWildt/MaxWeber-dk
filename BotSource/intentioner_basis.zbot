@@ -236,6 +236,6 @@
 
 ! pattern (intent = jeg_hedder, type = udsagn)
 {
-  > jeg hedder {navn}
-  > mit navn er {navn}
+  > jeg hedder ~ikke {navn}
+  > mit navn er ~ikke {navn}
 }
