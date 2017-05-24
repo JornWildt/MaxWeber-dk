@@ -23,3 +23,24 @@ LIMIT 1
 
 >> { intent = hvad_hvem_er }
 : Det kan jeg desværre ikke svare på
+
+
+>> hvilke_kender_du (emne)
+! call RDF.Query("
+SELECT ?name
+WHERE
+{
+  ?subj rdf:type ?type.
+  ?subj rdfs:label ?name.
+  ?type rdf:type rdfs:Class.
+  ?type zp:knownby ?emne
+  FILTER (?emne = lcase(@emne))
+}
+ORDER BY RAND()
+LIMIT 5
+")
+:Hvad med for eksempel <result:{r | <r.name>};separator=", ">
+{empty}: Jeg kender desværre ikke nogen eller noget <emne>.
+
+>> hvilke_kender_du
+: Det gør jeg desværre ikke.

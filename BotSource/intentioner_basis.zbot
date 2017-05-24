@@ -81,6 +81,18 @@
   > hvad mener du om {emne}
 }
 
+! pattern (intent = hvilke_kender_du, type = spm)
+{
+  > hvilke {emne} kender du
+  > hvilke {emne} findes der
+  > hvilke {emne} kan du komme i tanke om
+  > kender du nogle {emne}
+  > nævn nogle {emne}
+  > nævn en {emne}
+  > nævn et {emne}
+  > nævn et par {emne}
+}
+
 ! pattern (intent = hvor_gammel_er, type = spm)
 {
   > hvor gammel er {emne}
@@ -238,4 +250,11 @@
 {
   > jeg hedder ~ikke {navn}
   > mit navn er ~ikke {navn}
+}
+
+! pattern (intent = x_findes, type = udsagn)
+{
+  > {emne} findes
+  > der findes {emne}
+  > {emne} eksisterer
 }

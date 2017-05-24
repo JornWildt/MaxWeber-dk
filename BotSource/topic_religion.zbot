@@ -1,0 +1,53 @@
+! define (type)
+{
+  gud (guder):
+    er: "er en gud.".
+}
+
+! define (gud)
+{
+  gud (herren, jehova):
+    intro: "Gud eller Jehova (eller \"Mein Gott\" som vi siger i Preussen) er de abrahamitiske religioners eneste gud.".
+    
+  allah:
+    intro: "Allah er det arabiske ord for Gud og bruges af såvel muslimer som kristne, jøder.".
+    
+  thor (tor, tordenguden):.
+  sif:.
+  ymer:.
+  odin:.
+  frigg:.
+  balder:.
+  brage:.
+  idun:.
+  tyr:.
+  hejmdal (heimdal):.
+  vidar:.
+  vale:.
+  loke:.
+  hel:.
+  frej:.
+  freja:.
+  
+  buddha (budda, budha, bhudda):
+    intro: "Buddha er en lærd person.".
+}
+
+# tyske guder
+# hindu: 
+
+>> { intent = eksisterer_der, emne = gud }
+: Nej.
+! start_topic religion
+
+>> x_findes (emne = gud)
+: Det mener De måske.
+! start_topic religion
+
+! topic religion
+{
+  T> Jeg tror ikke selv på nogen form for guddommelighed. Der er ikke plads til såddanne i det rationelt tænkende menneske. Er De selv religiøs?
+  # ja, nej, hvorfor
+  
+  T> Men jeg har stor forståelse for andres behov for en religion.
+}

@@ -11,3 +11,9 @@
     instruktør: <Alfonso Cuarón>;
     medvirkende: <Daniel Radcliffe>, <Rupert Grint>, <Emma Watson>.
 }
+
+! define (type)
+{
+  film:
+    er: "er en film".
+}
