@@ -6,37 +6,55 @@
 
 ! define (gud)
 {
-  gud (herren, jehova):
-    intro: "Gud eller Jehova (eller \"Mein Gott\" som vi siger i Preussen) er de abrahamitiske religioners eneste gud.".
+  Gud (herren, Jehova):
+    intro: "Gud eller Jehova (eller \"Mein Gott\" som vi siger i Preussen) er de abrahamitiske religioners eneste gud.";
+    topic: religion.
     
-  allah:
-    intro: "Allah er det arabiske ord for Gud og bruges af såvel muslimer som kristne, jøder.".
+  Allah:
+    intro: "Allah er det arabiske ord for Gud og bruges af såvel muslimer som kristne, jøder.";
+    topic: religion.
     
-  thor (tor, tordenguden):.
-  sif:.
-  ymer:.
-  odin:.
-  frigg:.
-  balder:.
-  brage:.
-  idun:.
-  tyr:.
-  hejmdal (heimdal):.
-  vidar:.
-  vale:.
-  loke:.
-  hel:.
-  frej:.
-  freja:.
+  Thor (tor, tordenguden):
+    topic: religion.
+  Sif:
+    topic: religion.
+  Ymer:
+    topic: religion.
+  Odin:
+    topic: religion.
+  Frigg:
+    topic: religion.
+  Balder:
+    topic: religion.
+  Brage:
+    topic: religion.
+  Idun:
+    topic: religion.
+  Tyr:
+    topic: religion.
+  Hejmdal (heimdal):
+    topic: religion.
+  Vidar:
+    topic: religion.
+  Vale:
+    topic: religion.
+  Loke:
+    topic: religion.
+  Hel:
+    topic: religion.
+  Frej:
+    topic: religion.
+  Freja:
+    topic: religion.
   
-  buddha (budda, budha, bhudda):
+  Buddha (budda, budha, bhudda):
     intro: "Buddha er en lærd person.".
 }
 
 # tyske guder
 # hindu: 
 
->> { intent = eksisterer_der, emne = gud }
+>> { intent = eksisterer_der, emne:gud }
 : Nej.
 ! start_topic religion
 
@@ -46,8 +64,21 @@
 
 ! topic religion
 {
-  T> Jeg tror ikke selv på nogen form for guddommelighed. Der er ikke plads til såddanne i det rationelt tænkende menneske. Er De selv religiøs?
-  # ja, nej, hvorfor
+  T> Lyt nu engang, den moderne videnskab forstår verden som et sæt målbare resultater. 
+     +: Ikke alt det sludder med religion og tro. 
+     
+  T> Mennesket har ganske enkelt ikke længere en tro på fundamentale værdier, men må selv vælge sine egne.
   
-  T> Men jeg har stor forståelse for andres behov for en religion.
+  T> Religion er en slags hysterisk fortryllelse af masserne.
+  
+  T> Heldigvis erstattes i dag det irationelle med det rationelle. 
+     +: Effektivitet og bureaukrati er det som sikrer samfundets vækst.
+  
+  T> Yderligere er computeren det ultimative svar på rationalismen. 
+     +: Og så søger man at opfinde den kunstige intelligens? 
+     +: Pffttt siger jeg, det er det rene idioti.
+  
+  T> Jeg tror ikke selv på nogen form for guddommelighed. 
+     +: Der er ikke plads til såddanne i det rationelt tænkende menneske. Er De selv religiøs?
+  # ja, nej, hvorfor
 }

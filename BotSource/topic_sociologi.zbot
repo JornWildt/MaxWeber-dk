@@ -4,3 +4,11 @@
     intro: "Sociologi er studiet af samfund deres strukturer, organisation og betydning for de individer, der indgår i samfundet.".
 }
 
+
+! topic sociologi
+{
+  T> Det er uvidenskabeligt at tro, at man kan etablere en *objektiv* videnskabelig analyse af kulturelle forhold. 
+     +: Hvorfor? Fordi den observerende forsker altid tilskriver de fænomener, han studerer, kulturel mening.
+
+  T> Man kan altid sondre mellem erkendelsen af ’det der er’ og ’det der bør være’.
+}

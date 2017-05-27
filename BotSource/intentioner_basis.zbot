@@ -216,6 +216,13 @@
   > davs
 }
 
+! pattern (intent = farvel, type = udsagn)
+{
+  > farvel
+  > vi ses
+  > auf wienerschnitzel
+}
+
 ! pattern (intent = bande, type = udsagn)
 {
   > fuck
