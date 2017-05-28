@@ -1,0 +1,7 @@
+! define (bot)
+{
+  bot:.
+  chatbot:.
+  robot:.
+  ai:.
+}

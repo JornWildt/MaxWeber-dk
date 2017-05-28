@@ -79,6 +79,7 @@
   > hvad er navnet på {emne}
   > hvad er {emne} navn
   > hvad mener du om {emne}
+  > hvad vil det sige "at" være {emne}
 }
 
 ! pattern (intent = hvilke_kender_du, type = spm)
@@ -148,6 +149,10 @@
   > hvorfor dog det
   > hvordan det
   > hvorfor ikke  
+  > hvor har du lært det
+  > hvordan vidste du det
+  > tror du det
+  > mener du det
 }
 
 ! pattern (intent = hvordan, type = spm)
@@ -157,7 +162,7 @@
   > hvordan kan det dog være
 }
 
-! pattern (intent = ulækkert, type = udsagn)
+! pattern (intent = ulækkert, type = reaktion, holdning = neg)
 {
   > klamt
   > ulækkert
@@ -170,10 +175,9 @@
   > bvadr
 }
 
-! pattern (intent = forbløffet, type = udsagn)
+! pattern (intent = forbløffet, type = reaktion, holdning = pos)
 {
   > wow
-  > lol
   > wtf
   > what the fuck
   > verdammt
@@ -185,12 +189,32 @@
   > uhadada
   > huh
   > vildt
-  > lol
   > åhåh
   > åh nej
 }
 
-! pattern (intent = skuffet, type = udsagn)
+! pattern (intent = afventende, type = reaktion, holdning = nul)
+{
+  > aha
+  > hmm
+  > hmmm
+  > hmmmm
+  > okay
+}
+
+! pattern (intent = morsomt, type = reaktion, holdning = pos)
+{
+  > lol
+  > haha
+  > ha ha
+  > fnis
+  > griner
+  > sjovt
+  > hehe
+  > he he  
+}
+
+! pattern (intent = skuffet, type = reaktion, holdning = neg)
 {
   > øv
   > æv
@@ -198,6 +222,7 @@
   > pis
   > shit
   > hvor ærgerligt
+  > suk
 }
 
 ! pattern (intent = hilsen, type = udsagn)
@@ -244,6 +269,7 @@
   > jeg hader dig
   > rend og hop
   > hop i havet
+  > dø
 }
 
 ! pattern (intent = advare, type = udsagn)

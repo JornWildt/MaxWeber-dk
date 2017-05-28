@@ -1,4 +1,5 @@
 ! concept du = du, dig, de, deres
+! concept klog = klog, smart, intelligent, begavet, ikke så dum
 
 ! entities (personligt)
 {
@@ -44,6 +45,8 @@
 {
   > hvor bor %du
   > hvor lever %du
+  > hvor kommer %du fra
+  > hvor er %du fra
 }
 
 ! pattern (intent = er_du_sikker, type = spm)
@@ -54,4 +57,19 @@
   > emenr du virkelig det
   > er du helt sikker
   > er du bombesikker
+}
+
+! pattern (intent = er_du, type = spm)
+{
+  > er du {emne}
+}
+
+! pattern (intent = du_er_fantastisk, type = udsagn)
+{
+  > du er fantastisk
+  > jeg elsker dig
+  > hvor er du god
+  > du er utrolig
+  > du er så sød
+  > du er %klog
 }

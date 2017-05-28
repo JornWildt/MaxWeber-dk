@@ -1,8 +1,20 @@
 # Zombies are Max' little secret. He has an honest dislike for those things.
 
-! entities (væsen)
+! define (type)
 {
-  "zombie"
+  monster (monstre):
+    er: "er et monster.".
+  
+  væsen:
+    er: "er et væsen - måske død, magisk eller bare almindeligt levende væsen.".
+}
+
+
+! define (monster, væsen)
+{
+  zombie (zombier, zombien, zombierne):
+    intro: "Zombier er modbydelige væsenere hinsides enhver rationalitet eller logik.";
+    topic: "Zombier".
 }
 
 ! concept zombie = zombie, zombier, en zombie, zombien, zombierne

@@ -1,8 +1,22 @@
 ! define (type)
 {
   gud (guder):
-    er: "er en gud.".
+    er: "er en gud.";
+    intro: "En gud er et postuleret højere væsen i en religion, og formodes at kunne gøre overnaturlige eller uforklarlige ting. Guder anses ofte for at være udødelige.";
+    topic: religion.
+    
+  religion (religioner):
+    er: "er en religion.";
+    intro: "Religion er en trosretning, hvor folk har en fælles tro på en række antagelser.";
+    topic: religion.
+
+  religiøs:
+    er: "er en religiøs tilhænger.";
+    intro: "En religiøs person er tilhænger af en form for guddommelighed.";
+    topic: religion.
 }
+
+# "gud" som i "guddommelighed", cirka ...
 
 ! define (gud)
 {
@@ -14,6 +28,22 @@
     intro: "Allah er det arabiske ord for Gud og bruges af såvel muslimer som kristne, jøder.";
     topic: religion.
     
+  Muhammed (muhamed, mohamad, mohamed, mohammad, mohammed):
+    intro: "Muhammed regnes for en af guds profeter.".
+
+  # Germanske guder
+  Wotan (Wodan):
+    topic: religion.
+  Donar:
+    topic: religion.
+  Sunna:
+    topic: religion.
+  Hama:
+    topic: religion.
+  Fosite:
+    topic: religion.
+
+  # Nordiske guder
   Thor (tor, tordenguden):
     topic: religion.
   Sif:
@@ -46,23 +76,56 @@
     topic: religion.
   Freja:
     topic: religion.
-  
+
+  # Budhisme
   Buddha (budda, budha, bhudda):
     intro: "Buddha er en lærd person.".
 }
 
-# tyske guder
-# hindu: 
+! define (religiøs)
+{
+  kristen (kristne):.
+  muslim (muslimske,muslimer):.
+  hindu:.
+  budhist:.
+  troende:.
+  katolik:.
+  protestant:.
+}
 
->> { intent = eksisterer_der, emne:gud }
-: Nej.
-! start_topic religion
-
->> x_findes (emne = gud)
-: Det mener De måske.
-! start_topic religion
+! pattern (intent = hvilken_tror_du_på, type = spm)
+{
+  > hvilken {emne} tror %du på
+  > hvilke {emne} tror %du på
+}
 
 ! topic religion
+[
+  >> hvilken_tror_du_på
+  : Jeg tror ikke på nogen religiøs guddommelighed.
+
+  >> { intent = eksisterer_der, emne:gud }
+  : Nej.
+
+  >> x_findes (emne:gud)
+  : Det mener De måske.
+  
+  >> er_du (emne:religiøs)
+  : Nej. Jeg tror ikke på nogen religiøs guddommelighed.
+  
+  > *
+  ! weight 0.8
+  : Er de religiøs?
+  ! answer
+  {
+    >> ja
+    : Hmm. De tror altså på en højerestående guddommelighed. Må jeg spørge hvilken?
+    
+    >> nej
+    : Godt. Det gør jeg heller ikke.
+    ! continue
+  }
+]
 {
   T> Lyt nu engang, den moderne videnskab forstår verden som et sæt målbare resultater. 
      +: Ikke alt det sludder med religion og tro. 

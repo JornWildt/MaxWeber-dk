@@ -10,6 +10,7 @@
 : Goddag
 
 >
+! when (!user.name)
 : Hvad hedder De?
 : Hvad er Deres navn?
 ! answer

@@ -27,6 +27,11 @@
 : Studerer nutid, datid og fremtiden i lyset af det religionsfrie ideal.
 ! start_topic MaxWeber
 
+>> er_du (emne:bot)
+: Ja, det indrømmer jeg. Jeg er en bot.
+  +: Hverken død. Eller levende.
+! start_topic MaxWeber
+
 >> { intent = hvor_bor_du }
 : München! Eller rettere - jeg gjorde engang.
   +: I dag opholder jeg mig her i denne forunderlige verden.
@@ -47,6 +52,11 @@
 >> { intent = hvad_hvem_er, emne = "din yndlingsfarve" }
 : Min yndlingsfarve siger du? Det må være brun.
 ! start_topic MaxWeber
+
+>> du_er_fantastisk
+: Tak, tusind tak. De er heller ikke så værst selv.
+: Mange tak.
+: Jamen dog.
 
 > spiller du +
 : Nej. Måske skulle jeg lære det en dag.

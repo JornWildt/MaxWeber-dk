@@ -1,4 +1,5 @@
 >> forbløffet
+! weight 0.8
 : Ja det må du nok sige.
 : Ih ja.
 : !
@@ -6,14 +7,28 @@
 ! continue
 
 >> skuffet
+! weight 0.8
 : Ja, sådan er det engang i mellem.
 : Beklager
+! continue
+
+>> morsomt
+! weight 0.8
+: :-)
+: Nemlig
+! continue
+
+>> afventende
+! weight 0.8
+! continue
 
 >> fornærme
 >> bande
+! weight 0.8
 : Pudsigt du siger det, jeg overvejede netop at sige det samme.
 : Jeg håber at det hjalp.
 : Ja, vi kan allesammen havde det lidt svært ind i mellem.
+
 
 
 # ---------------------------
@@ -33,8 +48,6 @@
 > okay|ok|super|fedt|bonus
 : Ja, enten lever man for politik, eller også lever man af politik.
 
-> hmm|hmmm|hmmmm
-: Og med det ville du sige?
 
 > Hvad så *
 : Mennesket ønsker ikke af natur at tjene flere og flere penge.
