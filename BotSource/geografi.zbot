@@ -1,8 +1,22 @@
-# ! rdf_import "lande.ttl"
-# ! rdf_import "hovedstæder.ttl"
-# ! rdf_import "geografi.ttl"
+! define (type)
+{
+  by:
+    er: "er en by".
+    
+  sted:
+    er: "er et sted".
+    
+  land:
+    er: "er et land".
+}
 
-> hvor (ligger|er) +
+
+>> hvor_er (emne:sted)
+: På jorden!
+
+
+
+> xxx hvor (ligger|er) +
 ! call RDF.Query("
 SELECT ?cname ?csname ?aname
 WHERE
@@ -26,7 +40,7 @@ LIMIT 1
 {empty}: Splash - forbier :-(
 
 
-> hvad (ligger|er) * (på|i|ved) +
+> xxxx hvad (ligger|er) * (på|i|ved) +
 ! call RDF.Query("
 SELECT ?fname
 WHERE

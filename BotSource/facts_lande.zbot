@@ -1,0 +1,213 @@
+! define (land)
+{
+  "Afghanistan":.
+  "Albanien":.
+  "Algeriet":.
+  "Amerikansk Samoa":.
+  "Andorra":.
+  "Angola":.
+  "Antigua og Barbuda":.
+  "Argentina":.
+  "Armenien":.
+  "Aserbajdsjan":.
+  "Australien":.
+  "Bahamas":.
+  "Bahrain":.
+  "Bangladesh":.
+  "Barbados":.
+  "Belgien":.
+  "Belize":.
+  "Benin":.
+  "Bermuda":.
+  "Bhutan":.
+  "Bolivia":.
+  "Bosnien Hercegovina":.
+  "Botswana":.
+  "Brasilien":.
+  "Brunei":.
+  "Bulgarien":.
+  "Burkina Faso":.
+  "Burundi":.
+  "Cambodja":.
+  "Cameroun":.
+  "Canada":.
+  "Den Centralafrikanske Republik":.
+  "Tchad (chad)":.
+  "Chile":.
+  "Colombia":.
+  "Comorerne":.
+  "Republikken Congo":.
+  "Den Demokratiske Republik Congo (Zaire)":.
+  "Costa Rica":.
+  "Cuba":.
+  "Cypern":.
+  "Danmark":.
+  "Djibouti":.
+  "Dominica":.
+  "Den Dominikanske Republik":.
+  "Ecuador":.
+  "Egypten (Ægypten)":.
+  "El Salvador":.
+  "Elfenbenskysten":.
+  "Eritrea":.
+  "Estland":.
+  "Etiopien":.
+  "Fiji":.
+  "Filippinerne":.
+  "Finland":.
+  "De Forenede Arabiske Emirater":.
+  "Taiwan":.
+  "Frankrig":.
+  "Færøerne":.
+  "Gabon":.
+  "Gambia":.
+  "Georgien":.
+  "Ghana":.
+  "Grenada":.
+  "Grækenland":.
+  "Grønland":.
+  "Guatemala":.
+  "Guinea":.
+  "Guinea Bissau":.
+  "Fransk Guyana":.
+  "Haiti":.
+  "Holland":.
+  "Honduras":.
+  "Hviderusland":.
+  "Indien":.
+  "Indonesien":.
+  "Irak (Mesopotamien)":.
+  "Iran (Persien)":.
+  "Irland":.
+  "Island":.
+  "Israel":.
+  "Italien":.
+  "Jamaica":.
+  "Japan":.
+  "Jordan":.
+  "Kap Verde":.
+  "Kasakhstan":.
+  "Kenya":.
+  "Kina":.
+  "Kirgisistan":.
+  "Kiribati":.
+  "Nordkorea":.
+  "Sydkorea":.
+  "Kosovo":.
+  "Kroatien":.
+  "Kuwait":.
+  "Laos":.
+  "Lesotho":.
+  "Letland":.
+  "Libanon":.
+  "Liberia":.
+  "Libyen":.
+  "Liechtenstein":.
+  "Litauen":.
+  "Luxembourg":.
+  "Madagaskar":.
+  "Makedonien":.
+  "Malawi":.
+  "Malaysia":.
+  "Maldiverne":.
+  "Mali":.
+  "Malta":.
+  "Marokko":.
+  "Marshalløerne":.
+  "Mauretanien":.
+  "Mauritius":.
+  "Mexico":.
+  "Mikronesien":.
+  "Moldova":.
+  "Monaco":.
+  "Mongoliet":.
+  "Montenegro":.
+  "Mozambique":.
+  "Myanmar (Burma)":.
+  "Namibia":.
+  "Nauru":.
+  "Nederlandene":.
+  "Nepal":.
+  "New Zealand":.
+  "Nicaragua":.
+  "Niger":.
+  "Nigeria":.
+  "Niue":.
+  "Nordkorea":.
+  "Norge":.
+  "Oman":.
+  "Pakistan":.
+  "Palau":.
+  "Palæstina":.
+  "Panama":.
+  "Papua Ny Guinea":.
+  "Paraguay":.
+  "Peru":.
+  "Pitcairn":.
+  "Polen":.
+  "Portugal":.
+  "Puerto Rico":.
+  "Qatar":.
+  "Rumænien":.
+  "Rusland":.
+  "Rwanda":.
+  "Saint Kitts (Nevis)":.
+  "Saint Lucia":.
+  "Saint Vincent (Grenadinerne)":.
+  "Salomonøerne":.
+  "Samoa":.
+  "San Marino":.
+  "Sao Tomé (Principe)":.
+  "Saudi Arabien":.
+  "Schweiz":.
+  "Senegal":.
+  "Serbien":.
+  "Seychellerne":.
+  "Sierra Leone":.
+  "Singapore":.
+  "Slovakiet":.
+  "Slovenien":.
+  "Somalia":.
+  "Spanien":.
+  "Sri Lanka (Ceylon)":.
+  "Storbritannien (Nordirland)":.
+  "Sudan":.
+  "Surinam (Hollandsk Guyana)":.
+  "Sverige":.
+  "Swaziland":.
+  "Sydafrika":.
+  "Sydkorea":.
+  "Sydsudan":.
+  "Syrien":.
+  "Tadsjikistan":.
+  "Taiwan":.
+  "Tanzania":.
+  "Tchad":.
+  "Thailand (Siam)":.
+  "Tjekkiet":.
+  "Togo":.
+  "Tonga":.
+  "Trinidad og Tobago":.
+  "Tunesien":.
+  "Turkmenistan":.
+  "Tuvalu (Ellice Island)":.
+  "Tyrkiet":.
+  "Tyskland":.
+  "Uganda":.
+  "Ukraine":.
+  "Ungarn":.
+  "Uruguay":.
+  "USA":.
+  "Usbekistan":.
+  "Vanuatu":.
+  "Vatikanstaten":.
+  "Venezuela":.
+  "Vestsahara":.
+  "Vietnam":.
+  "Yemen":.
+  "Zambia":.
+  "Zimbabwe (Rhodesia)":.
+  "Ækvatorialguinea":.
+  "Østrig":.
+  "Østtimor":.
+}
