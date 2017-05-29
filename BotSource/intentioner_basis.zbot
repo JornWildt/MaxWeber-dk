@@ -61,6 +61,7 @@
   > det tror jeg også
   > smukt
   > sådan
+  > flot
 }
 
 ! pattern (intent = hvad_hvem_er, type = spm)
@@ -164,6 +165,8 @@
   > hvordan vidste du det
   > tror du det
   > mener du det
+  > vil du uddybe det
+  > kan du uddybe det
 }
 
 ! pattern (intent = hvordan, type = spm)

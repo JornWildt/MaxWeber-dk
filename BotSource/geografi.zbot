@@ -24,6 +24,10 @@ WHERE
   FILTER (?emne = lcase(@emne))
 }
 ")
-: <result:{r | <emne> ligge i <r.name>}>
+: <emne> ligger i <result:{r | <r.name>}>
 {empty}: Det ved jeg ikke.
 
+
+> *
+! weight 0.8
+: Jeg har forøvigt lært en smule geografi. Spørg mig fx om hvor Berlin ligger henne.

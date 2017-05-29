@@ -11,7 +11,7 @@
 
 >
 ! when (!user.name)
-: Hvad hedder De?
+: Hvad hedder De (<user.name>)?
 : Hvad er Deres navn?
 ! answer
 {
