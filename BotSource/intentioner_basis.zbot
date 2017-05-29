@@ -15,6 +15,7 @@
   > right
   > helt sikkert
   > absolut
+  > meget
 }
 
 ! pattern (intent = nej, type = udsagn)
@@ -162,6 +163,16 @@
   > hvordan kan det dog være
 }
 
+! pattern (intent = hjælp, type = spm)
+{
+  > jeg har brug for hjælp
+  > hjælp
+  > hjælp mig
+  > hvad skal jeg gøre
+  > hvad nu
+  > hvordan kommer jeg videre
+}
+
 ! pattern (intent = ulækkert, type = reaktion, holdning = neg)
 {
   > klamt
@@ -239,6 +250,7 @@
   > vær hilset
   > dav
   > davs
+  > hallo
 }
 
 ! pattern (intent = farvel, type = udsagn)

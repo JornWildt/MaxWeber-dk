@@ -41,6 +41,15 @@
 : Ja da, selvfølgelig
 : Jah, klar!
 
+>> taler_du (sprog = tysk)
+: Nej, jeg har desværre glemt mit tyske. Underligt nok.
+
+>> taler_du (sprog = dansk)
+: Ja, så absolut.
+
+>> taler_du (sprog = *)
+: Nej, det har jeg aldrig lært.
+
 >> { intent = hvad_hvem_er, emne = "din mor" }
 : Min fantastiske moder hed Helene (tidligere Fallenstein).
 ! start_topic MaxWeber

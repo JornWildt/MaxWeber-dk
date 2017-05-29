@@ -41,6 +41,13 @@
   > hvor mange år er %du
 }
 
+! pattern (intent = taler_du, type = spm)
+{
+  > taler %du {sprog}
+  > kan %du tale {sprog}
+  > snakker %du {sprog}
+}
+
 ! pattern (intent = hvor_bor_du, type = spm)
 {
   > hvor bor %du
