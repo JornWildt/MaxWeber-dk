@@ -22,6 +22,11 @@
 ! weight 0.8
 ! continue
 
+>> enig
+! weight 0.8
+: Godt
+: Fint
+
 >> fornærme
 >> bande
 ! weight 0.8

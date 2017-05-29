@@ -1,70 +1,29 @@
 ! define (type)
 {
   by:
-    er: "er en by".
+    er: "er en by";
+    intro: "En by er sted hvor mennesker samles og bor.".
     
   sted:
     er: "er et sted".
     
   land:
-    er: "er et land".
+    er: "er et land";
+    intro: "Et land er et politisk bestemt geografisk område.".
 }
 
 
 >> hvor_er (emne:sted)
-: På jorden!
-
-
-
-> xxx hvor (ligger|er) +
 ! call RDF.Query("
-SELECT ?cname ?csname ?aname
+SELECT ?name
 WHERE
 {
-  ?feature rdf:type gn:Feature .
-  ?feature gn:alternateName ?fname .
-  ?feature gn:parentCountry ?country .
-  OPTIONAL { ?country gn:alternateName ?cname }.
-  OPTIONAL { ?country gn:shortName ?csname }.
-  OPTIONAL { 
-    ?feature gn:parentADM1 ?area .
-    ?area gn:alternateName ?aname 
-  }.
-  FILTER (lcase(str(?fname)) = lcase(str(@2)))
+  ?subj zp:knownby ?emne.
+  ?subj zp:sted ?sted.
+  ?sted rdfs:label ?name.
+  FILTER (?emne = lcase(@emne))
 }
-LIMIT 1
 ")
-: <2> ligger i <result:{r | <if(r.csname)><r.csname><else><r.cname><endif><if(r.aname)> (<r.aname>)<endif>}>.
-{empty}: Det ved jeg altså ikke.
-{empty}: Langt herfra? Har aldrig hørt om det.
-{empty}: Splash - forbier :-(
-
-
-> xxxx hvad (ligger|er) * (på|i|ved) +
-! call RDF.Query("
-SELECT ?fname
-WHERE
-{
-  {
-    ?feature rdf:type gn:Feature .
-    ?feature gn:alternateName ?fname .
-    ?feature gn:parentADM1 ?adm .
-    ?adm gn:alternateName ?aname .
-  }
-  UNION
-  {
-    ?feature rdf:type gn:Feature .
-    ?feature gn:alternateName ?fname .
-    ?feature gn:parentCountry ?adm .
-    ?adm gn:alternateName ?aname .
-  }
-  FILTER (lcase(str(?aname)) = lcase(str(@4)))
-}
-ORDER BY RAND()
-LIMIT 1
-")
-: Der gør fx <result:{r | <r.fname>}>.
-: Hvad med <result:{r | <r.fname>}>?
-{empty}: Det ved jeg altså ikke.
-{empty}: En klub? Har aldrig hørt om det.
+: <result:{r | <emne> ligge i <r.name>}>
+{empty}: Det ved jeg ikke.
 
