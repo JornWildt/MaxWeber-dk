@@ -62,6 +62,7 @@
   > smukt
   > sådan
   > flot
+  > fornemt
 }
 
 ! pattern (intent = hvad_hvem_er, type = spm)
@@ -111,21 +112,6 @@
   > hvor henne er det
   > hvor ligger det
   > hvor ligger det henne
-}
-
-! pattern (intent = hvad_ligger_i, type = spm)
-{
-  > hvad ligger i {emne}
-  > hvad ligger der i {emne}
-  > hvad er der i {emne}
-}
-
-! pattern (intent = hvor_er, type = spm)
-{
-  > hvor ligger {emne}
-  > hvor ligger {emne} henne
-  > hvor er {emne}
-  > hvor er {emne} henne
 }
 
 ! pattern (intent = eksisterer_der, type = spm)
@@ -271,6 +257,9 @@
   > dav
   > davs
   > hallo
+  > hey
+  > yo
+  > wolla
 }
 
 ! pattern (intent = farvel, type = udsagn)

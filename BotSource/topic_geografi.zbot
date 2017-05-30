@@ -13,6 +13,35 @@
 }
 
 
+! pattern (intent = hvad_ligger_i, type = spm)
+{
+  > hvad ligger i {emne}
+  > hvad ligger der i {emne}
+  > hvad er der i {emne}
+  > hvad kan man finde i {emne}
+}
+
+
+! pattern (intent = ligger_x_i, type = spm)
+{
+  > ligger {emne} i {sted}
+  > ligger {emne} ved {sted}
+}
+
+
+! pattern (intent = hvor_er, type = spm)
+{
+  > hvor ligger {emne}
+  > hvor ligger {emne} henne
+  > hvor er {emne}
+  > hvor er {emne} henne
+  > hvor finder jeg {emne}
+  > hvor finder jeg {emne} henne
+  > hvor kan jeg finde {emne}
+  > hvor kan jeg finde {emne} henne
+}
+
+
 >> hvor_er (emne:sted)
 ! call RDF.Query("
 SELECT ?name
@@ -38,10 +67,29 @@ WHERE
   ?subj rdfs:label ?name.
   FILTER (?knownby = lcase(@emne))
 }
+ORDER BY RAND()
 LIMIT 5
 ")
 : Det kunne være <result:{r | <r.name>};separator=", ">.
 {empty}: Ikke noget jeg kender til.
+
+
+>> ligger_x_i (emne:sted, sted:sted)
+! call RDF.Query("
+SELECT ?name
+WHERE
+{
+  ?emne zp:knownby ?emneKnownby.
+  ?sted zp:knownby ?stedKnownby.
+  ?emne zp:sted ?sted.
+  ?emne rdfs:label ?name
+  FILTER (?emneKnownby = lcase(@emne))
+  FILTER (?stedKnownby = lcase(@sted))
+}
+LIMIT 1
+")
+: Ja
+{empty}: Nej
 
 
 >> hjælp
