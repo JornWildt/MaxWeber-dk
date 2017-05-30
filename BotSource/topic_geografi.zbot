@@ -28,6 +28,25 @@ WHERE
 {empty}: Det ved jeg ikke.
 
 
+>> hvad_ligger_i (emne:sted)
+! call RDF.Query("
+SELECT ?name
+WHERE
+{
+  ?sted zp:knownby ?knownby.
+  ?subj zp:sted ?sted.
+  ?subj rdfs:label ?name.
+  FILTER (?knownby = lcase(@emne))
+}
+LIMIT 5
+")
+: Det kunne være <result:{r | <r.name>};separator=", ">.
+{empty}: Ikke noget jeg kender til.
+
+
+>> hjælp
+: Har De brug for hjælp? Jeg kender lidt geografi. Spørg bare.
+
 > *
 ! weight 0.8
 : Jeg har forøvigt lært en smule geografi. Spørg mig fx om hvor Berlin ligger henne.

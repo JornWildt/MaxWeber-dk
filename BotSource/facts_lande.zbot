@@ -1,4 +1,4 @@
-! define (land)
+! define (land, sted)
 {
   "Afghanistan":.
   "Albanien":.
