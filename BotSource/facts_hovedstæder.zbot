@@ -104,7 +104,7 @@
       sted: <Bangladesh>.
     "Dakar":
       sted: <Senegal>.
-    "Dalap-Uliga-Darrit":
+    "Dalap Uliga Darrit":
       sted: <Marshalløerne>.
     "Damaskus":
       sted: <Syrien>.
@@ -165,7 +165,7 @@
     "Kingston":
       sted: <Jamaica>.
     "Kingstown":
-      sted: <Saint Vincent og Grenadinerne>.
+      sted: <Saint Vincent>, <Grenadinerne>.
     "Kinshasa":
       sted: <Demokratiske Republik Congo>.
     "Kuala Lumpur":
@@ -239,7 +239,7 @@
     "Nassau":
       sted: <Bahamas>.
     "Naypyidaw":
-      sted: <Burma>.
+      sted: <Myanmar>.
     "New Delhi":
       sted: <Indien>.
     "Niamey":
@@ -299,7 +299,7 @@
     "Riga":
       sted: <Letland>.
     "Riyadh":
-      sted: <Saudiarabien>.
+      sted: <Saudi Arabien>.
     "Rom":
       sted: <Italien>.
     "Roseau":
@@ -352,7 +352,7 @@
       sted: <Honduras>.
     "Teheran":
       sted: <Iran>.
-    "Tel Aviv" ("Jerusalem"):
+    "Tel Aviv" (Jerusalem):
       sted: <Israel>.
     "Thimphu":
       sted: <Bhutan>.
@@ -372,7 +372,7 @@
       sted: <Liechtenstein>.
     "Valletta":
       sted: <Malta>.
-    "Vatikanstaten":
+    "Vatikanet":
       sted: <Vatikanet>.
     "Vientiane":
       sted: <Laos>.
@@ -380,7 +380,7 @@
       sted: <Litauen>.
     "Warszawa":
       sted: <Polen>.
-    "Washington D.C.":
+    "Washington DC" (Washington):
       sted: <USA>.
     "Wellington":
       sted: <New Zealand>.

@@ -64,8 +64,6 @@
     hovedstad: <Ottawa>.
   "Den Centralafrikanske Republik":
     hovedstad: <Bangui>.
-  "Tchad" (chad):
-    hovedstad: <N'Djamena>.
   "Chile":
     hovedstad: <Santiago de Chile>.
   "Colombia":
@@ -140,7 +138,7 @@
     hovedstad: <Georgetown>.
   "Haiti":
     hovedstad: <Port au Prince>.
-  "Holland":
+  "Holland" (Nederlandene):
     hovedstad: <Amsterdam>.
   "Honduras":
     hovedstad: <Tegucigalpa>.
@@ -159,7 +157,7 @@
   "Island":
     hovedstad: <Reykjavik>.
   "Israel":
-    hovedstad: <el Aviv>.
+    hovedstad: <Tel Aviv>.
   "Italien":
     hovedstad: <Rom>.
   "Jamaica":
@@ -215,205 +213,199 @@
   "Malawi":
     hovedstad: <Lilongwe>.
   "Malaysia":
-    hovedstad: <>.
+    hovedstad: <Kuala Lumpur>.
   "Maldiverne":
-    hovedstad: <>.
+    hovedstad: <Male>.
   "Mali":
-    hovedstad: <>.
+    hovedstad: <Bamako>.
   "Malta":
-    hovedstad: <>.
+    hovedstad: <Valletta>.
   "Marokko":
-    hovedstad: <>.
+    hovedstad: <Rabat>.
   "Marshalløerne":
-    hovedstad: <>.
+    hovedstad: <Dalap Uliga Darrit>.
   "Mauretanien":
-    hovedstad: <>.
+    hovedstad: <Nouakchott>.
   "Mauritius":
-    hovedstad: <>.
+    hovedstad: <Port Louis>.
   "Mexico":
-    hovedstad: <>.
+    hovedstad: <Mexico City>.
   "Mikronesien":
-    hovedstad: <>.
-  "Moldova":
-    hovedstad: <>.
+    hovedstad: <Palikir>.
+#  "Moldova":
+#    hovedstad: <>.
   "Monaco":
-    hovedstad: <>.
+    hovedstad: <Monaco>.
   "Mongoliet":
-    hovedstad: <>.
+    hovedstad: <Ulan Bator>.
   "Montenegro":
-    hovedstad: <>.
+    hovedstad: <Podgorica>.
   "Mozambique":
-    hovedstad: <>.
-  "Myanmar (Burma)":
-    hovedstad: <>.
+    hovedstad: <Maputo>.
+  "Myanmar" (Burma):
+    hovedstad: <Naypyidaw>.
   "Namibia":
-    hovedstad: <>.
+    hovedstad: <Windhoek>.
   "Nauru":
-    hovedstad: <>.
-  "Nederlandene":
-    hovedstad: <>.
+    hovedstad: <Yaren>.
   "Nepal":
-    hovedstad: <>.
+    hovedstad: <Katmandu>.
   "New Zealand":
-    hovedstad: <>.
+    hovedstad: <Wellington>.
   "Nicaragua":
-    hovedstad: <>.
+    hovedstad: <Managua>.
   "Niger":
-    hovedstad: <>.
+    hovedstad: <Niamey>.
   "Nigeria":
-    hovedstad: <>.
-  "Niue":
-    hovedstad: <>.
-  "Nordkorea":
-    hovedstad: <>.
+    hovedstad: <Abuja>.
+#  "Niue":
+#    hovedstad: <>.
   "Norge":
-    hovedstad: <>.
+    hovedstad: <Oslo>.
   "Oman":
-    hovedstad: <>.
+    hovedstad: <Muskat>.
   "Pakistan":
-    hovedstad: <>.
+    hovedstad: <Islamabad>.
   "Palau":
-    hovedstad: <>.
-  "Palæstina":
-    hovedstad: <>.
+    hovedstad: <Melekeok>.
+#  "Palæstina":
+#    hovedstad: <>.
   "Panama":
-    hovedstad: <>.
+    hovedstad: <Panama City>.
   "Papua Ny Guinea":
-    hovedstad: <>.
+    hovedstad: <Port Moresby>.
   "Paraguay":
-    hovedstad: <>.
+    hovedstad: <Asunción>.
   "Peru":
-    hovedstad: <>.
-  "Pitcairn":
-    hovedstad: <>.
+    hovedstad: <Lima>.
+#  "Pitcairn":
+#    hovedstad: <>.
   "Polen":
-    hovedstad: <>.
+    hovedstad: <Warszawa>.
   "Portugal":
-    hovedstad: <>.
-  "Puerto Rico":
-    hovedstad: <>.
+    hovedstad: <Lissabon>.
+#  "Puerto Rico":
+#    hovedstad: <>.
   "Qatar":
-    hovedstad: <>.
+    hovedstad: <Doha>.
   "Rumænien":
-    hovedstad: <>.
+    hovedstad: <Bukarest>.
   "Rusland":
-    hovedstad: <>.
+    hovedstad: <Moskva>.
   "Rwanda":
-    hovedstad: <>.
-  "Saint Kitts (Nevis)":
-    hovedstad: <>.
+    hovedstad: <Kigali>.
+  "Saint Kitts og Nevis" ("Saint Kitts", Nevis):
+    hovedstad: <Basseterre>.
   "Saint Lucia":
-    hovedstad: <>.
-  "Saint Vincent (Grenadinerne)":
-    hovedstad: <>.
+    hovedstad: <Castries>.
+  "Saint Vincent" (Grenadinerne):
+    hovedstad: <Kingstown>.
   "Salomonøerne":
-    hovedstad: <>.
+    hovedstad: <Honiara>.
   "Samoa":
-    hovedstad: <>.
+    hovedstad: <Apia>.
   "San Marino":
-    hovedstad: <>.
-  "Sao Tomé (Principe)":
-    hovedstad: <>.
+    hovedstad: <San Marino>.
+#  "Sao Tomé" (Principe):
+#    hovedstad: <>.
   "Saudi Arabien":
-    hovedstad: <>.
+    hovedstad: <Riyadh>.
   "Schweiz":
-    hovedstad: <>.
+    hovedstad: <Bern>.
   "Senegal":
-    hovedstad: <>.
+    hovedstad: <Dakar>.
   "Serbien":
-    hovedstad: <>.
-  "Seychellerne":
-    hovedstad: <>.
+    hovedstad: <Beograd>.
+#  "Seychellerne":
+#    hovedstad: <>.
   "Sierra Leone":
-    hovedstad: <>.
+    hovedstad: <Freetown>.
   "Singapore":
-    hovedstad: <>.
+    hovedstad: <Singapore>.
   "Slovakiet":
-    hovedstad: <>.
+    hovedstad: <Bratislava>.
   "Slovenien":
-    hovedstad: <>.
+    hovedstad: <Ljubljana>.
   "Somalia":
-    hovedstad: <>.
+    hovedstad: <Mogadishu>.
   "Spanien":
-    hovedstad: <>.
-  "Sri Lanka (Ceylon)":
-    hovedstad: <>.
-  "Storbritannien (Nordirland)":
-    hovedstad: <>.
+    hovedstad: <Madrid>.
+  "Sri Lanka" (Ceylon):
+    hovedstad: <Colombo>.
+  "Storbritannien" (Nordirland):
+    hovedstad: <London>.
   "Sudan":
-    hovedstad: <>.
+    hovedstad: <Juba>.
   "Sverige":
-    hovedstad: <>.
+    hovedstad: <Stockholm>.
   "Swaziland":
-    hovedstad: <>.
+    hovedstad: <Mbabane>.
   "Sydafrika":
-    hovedstad: <>.
-  "Sydkorea":
-    hovedstad: <>.
+    hovedstad: <Pretoria>.
   "Sydsudan":
-    hovedstad: <>.
+    hovedstad: <Juba>.
   "Syrien":
-    hovedstad: <>.
+    hovedstad: <Damaskus>.
   "Tadsjikistan":
-    hovedstad: <>.
+    hovedstad: <Dusjanbe>.
   "Taiwan":
     hovedstad: <Taipei>.
   "Tanzania":
-    hovedstad: <>.
-  "Tchad":
-    hovedstad: <>.
-  "Thailand (Siam)":
-    hovedstad: <>.
+    hovedstad: <Dodoma>.
+  "Tchad" (chad):
+    hovedstad: <N'Djamena>.
+  "Thailand" (Siam):
+    hovedstad: <Bangkok>.
   "Tjekkiet":
-    hovedstad: <>.
+    hovedstad: <Prag>.
   "Togo":
-    hovedstad: <>.
+    hovedstad: <Lomé>.
   "Tonga":
-    hovedstad: <>.
-  "Trinidad og Tobago":
-    hovedstad: <>.
+    hovedstad: <Nuku'alofa>.
+  "Trinidad og Tobago" (Trinidad, Tobago):
+    hovedstad: <Port of Spain>.
   "Tunesien":
-    hovedstad: <>.
+    hovedstad: <Tunis>.
   "Turkmenistan":
-    hovedstad: <>.
-  "Tuvalu (Ellice Island)":
-    hovedstad: <>.
+    hovedstad: <Asjkhabad>.
+  "Tuvalu" ("Ellice Island"):
+    hovedstad: <Funafuti>.
   "Tyrkiet":
-    hovedstad: <>.
+    hovedstad: <Ankara>.
   "Tyskland":
-    hovedstad: <>.
+    hovedstad: <Berlin>.
   "Uganda":
-    hovedstad: <>.
+    hovedstad: <Kampala>.
   "Ukraine":
-    hovedstad: <>.
+    hovedstad: <Kijev>.
   "Ungarn":
-    hovedstad: <>.
+    hovedstad: <Budapest>.
   "Uruguay":
-    hovedstad: <>.
+    hovedstad: <Montevideo>.
   "USA":
-    hovedstad: <>.
+    hovedstad: <Washington DC>.
   "Usbekistan":
-    hovedstad: <>.
+    hovedstad: <Tasjkent>.
   "Vanuatu":
-    hovedstad: <>.
-  "Vatikanstaten":
-    hovedstad: <>.
+    hovedstad: <Port Vila>.
+  "Vatikanet" (Vatikanstaten):
+    hovedstad: <Vatikanet>.
   "Venezuela":
-    hovedstad: <>.
-  "Vestsahara":
-    hovedstad: <>.
+    hovedstad: <Caracas>.
+#  "Vestsahara":
+#    hovedstad: <>.
   "Vietnam":
-    hovedstad: <>.
+    hovedstad: <Hanoi>.
   "Yemen":
-    hovedstad: <>.
+    hovedstad: <Sanaá>.
   "Zambia":
-    hovedstad: <>.
-  "Zimbabwe (Rhodesia)":
-    hovedstad: <>.
+    hovedstad: <Lusaka>.
+  "Zimbabwe" (Rhodesia):
+    hovedstad: <Harare>.
   "Ækvatorialguinea":
-    hovedstad: <>.
+    hovedstad: <Malabo>.
   "Østrig":
-    hovedstad: <>.
+    hovedstad: <Wien>.
   "Østtimor":
-    hovedstad: <>.
+    hovedstad: <Dili>.
 }
