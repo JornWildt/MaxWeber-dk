@@ -1,0 +1,172 @@
+! define (by, sted)
+{
+  "Berlin":
+    sted: <Tyskland>.
+  "Hamborg":
+    sted: <Tyskland>.
+  "München":
+    sted: <Tyskland>;
+    topic: MaxWeber.
+  "Köln":
+    sted: <Tyskland>.
+  "Frankfurt am Main" (Frankfurt):
+    sted: <Tyskland>.
+  "Stuttgart":
+    sted: <Tyskland>.
+  "Dortmund":
+    sted: <Tyskland>.
+  "Essen":
+    sted: <Tyskland>.
+  "Düsseldorf":
+    sted: <Tyskland>.
+  "Bremen":
+    sted: <Tyskland>.
+  "Hannover":
+    sted: <Tyskland>.
+  "Leipzig":
+    sted: <Tyskland>.
+  "Duisburg":
+    sted: <Tyskland>.
+  "Nürnberg":
+    sted: <Tyskland>.
+  "Dresden":
+    sted: <Tyskland>.
+  "Bochum":
+    sted: <Tyskland>.
+  "Wuppertal":
+    sted: <Tyskland>.
+  "Bielefeld":
+    sted: <Tyskland>.
+  "Bonn":
+    sted: <Tyskland>.
+  "Mannheim":
+    sted: <Tyskland>.
+  "Karlsruhe":
+    sted: <Tyskland>.
+  "Wiesbaden":
+    sted: <Tyskland>.
+  "Münster":
+    sted: <Tyskland>.
+  "Gelsenkirchen":
+    sted: <Tyskland>.
+  "Augsburg":
+    sted: <Tyskland>.
+  "Mönchengladbach":
+    sted: <Tyskland>.
+  "Aachen":
+    sted: <Tyskland>.
+  "Chemnitz":
+    sted: <Tyskland>.
+  "Braunschweig":
+    sted: <Tyskland>.
+  "Krefeld":
+    sted: <Tyskland>.
+  "Halle (Saale)" (Halle):
+    sted: <Tyskland>.
+  "Kiel":
+    sted: <Tyskland>.
+  "Magdeburg":
+    sted: <Tyskland>.
+  "Oberhausen":
+    sted: <Tyskland>.
+  "Freiburg im Breisgau" (Freiburg):
+    sted: <Tyskland>;
+    topic: MaxWeber.
+  "Lübeck":
+    sted: <Tyskland>.
+  "Erfurt":
+    sted: <Tyskland>;
+    topic: MaxWeber.
+  "Rostock":
+    sted: <Tyskland>.
+  "Hagen":
+    sted: <Tyskland>.
+  "Kassel":
+    sted: <Tyskland>.
+  "Mainz":
+    sted: <Tyskland>.
+  "Hamm":
+    sted: <Tyskland>.
+  "Saarbrücken":
+    sted: <Tyskland>.
+  "Herne":
+    sted: <Tyskland>.
+  "Mülheim an der Ruhr" (Mülheim):
+    sted: <Tyskland>.
+  "Osnabrück":
+    sted: <Tyskland>.
+  "Solingen":
+    sted: <Tyskland>.
+  "Ludwigshafen am Rhein" (Ludwigshafen):
+    sted: <Tyskland>.
+  "Leverkusen":
+    sted: <Tyskland>.
+  "Oldenburg":
+    sted: <Tyskland>.
+  "Neuss":
+    sted: <Tyskland>.
+  "Potsdam":
+    sted: <Tyskland>.
+  "Paderborn":
+    sted: <Tyskland>.
+  "Heidelberg":
+    sted: <Tyskland>;
+    topic: MaxWeber.
+  "Darmstadt":
+    sted: <Tyskland>.
+  "Würzburg":
+    sted: <Tyskland>.
+  "Regensburg":
+    sted: <Tyskland>.
+  "Göttingen":
+    sted: <Tyskland>.
+  "Recklinghausen":
+    sted: <Tyskland>.
+  "Heilbronn":
+    sted: <Tyskland>.
+  "Ingolstadt":
+    sted: <Tyskland>.
+  "Wolfsburg":
+    sted: <Tyskland>.
+  "Ulm":
+    sted: <Tyskland>.
+  "Offenbach am Main" (Offenbach):
+    sted: <Tyskland>.
+  "Bottrop":
+    sted: <Tyskland>.
+  "Pforzheim":
+    sted: <Tyskland>.
+  "Bremerhaven":
+    sted: <Tyskland>.
+  "Remscheid":
+    sted: <Tyskland>.
+  "Fürth":
+    sted: <Tyskland>.
+  "Reutlingen":
+    sted: <Tyskland>.
+  "Salzgitter":
+    sted: <Tyskland>.
+  "Moers":
+    sted: <Tyskland>.
+  "Koblenz":
+    sted: <Tyskland>.
+  "Siegen":
+    sted: <Tyskland>.
+  "Bergisch Gladbach":
+    sted: <Tyskland>.
+  "Cottbus":
+    sted: <Tyskland>.
+  "Gera":
+    sted: <Tyskland>.
+  "Erlangen":
+    sted: <Tyskland>.
+  "Hildesheim":
+    sted: <Tyskland>.
+  "Jena":
+    sted: <Tyskland>.
+  "Witten":
+    sted: <Tyskland>.
+  "Füssen":
+    sted: <Tyskland>.
+  }
+  

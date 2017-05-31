@@ -15,7 +15,7 @@
     "Amman":
       sted: <Jordan>.
     "Amsterdam":
-      sted: <Nederlandene>.
+      sted: <Holland>.
     "Andorra la Vella":
       sted: <Andorra>.
     "Ankara":
@@ -304,9 +304,9 @@
       sted: <Italien>.
     "Roseau":
       sted: <Dominica>.
-    "Saint George's":
+    "Saint George's" ("Saint Georges"):
       sted: <Grenada>.
-    "Saint John's":
+    "Saint Johns":
       sted: <Antigua og Barbuda>.
     "San José":
       sted: <Costa Rica>.
@@ -360,7 +360,7 @@
       sted: <Albanien>.
     "Tokyo":
       sted: <Japan>.
-    "Tórshavn":
+    "Tórshavn" (Torshavn):
       sted: <Færøerne>.
     "Tripoli":
       sted: <Libyen>.
