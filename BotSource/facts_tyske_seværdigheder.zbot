@@ -1,0 +1,27 @@
+! define (seværdighed, bygning, sted)
+{
+  "Neuschwanstein":
+    sted: <Füssen>.
+  "Domkirken i Köln":
+    sted: <Köln>.
+  "Lübecker Holstentor":
+    sted: <Lübeck>.
+  "Ulmer Münster":
+    sted: <Ulm>.
+  "Dresdner Frauenkirche":
+    sted: <Dresden>.
+  "Heidelberg slot":
+    sted: <Heidelberg>.
+  "Mannheim slot":
+    sted: <Mannheim>.
+}
+
+! define (seværdighed, sted)
+{
+  "Brandenburger Tor":
+    sted: <Berlin>.
+  "Miniature Wonderland":
+    sted: <Hamburg>.
+  "Schwarzwald" ("Bayerischer Wald"):
+    sted: <Tyskland>.
+}
