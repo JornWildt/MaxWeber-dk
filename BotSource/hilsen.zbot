@@ -6,8 +6,17 @@
 >> hilsen
 ! when (!user.name)
 : Velkommen. Mit navn er Max, Max Weber.
-: Vær hilset.
 : Goddag
+
+> %hilsen
+! when (user.name)
+: Velkommen <user.name>
+: Vær hilset <user.name>
+! continue
+
+>> { intent = jeg_hedder, navn = * }
+! set user.name = $navn
+: Okay, <user.name>
 
 >
 ! when (!user.name)
@@ -36,16 +45,6 @@
     }
   }
 }
-
-> %hilsen
-! when (user.name)
-: Velkommen <user.name>
-: Vær hilset <user.name>
-! continue
-
->> { intent = jeg_hedder, navn = * }
-! set user.name = $navn
-: Okay, <user.name>
 
 > Jeg hedder * ikke +
 : Man ser det med det samme
