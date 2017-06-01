@@ -17,6 +17,7 @@
   > absolut
   > meget
   > hørt
+  > selvfølgelig
 }
 
 ! pattern (intent = nej, type = udsagn)
@@ -38,6 +39,8 @@
   > skrid
   > hold nu op
   > stop
+  > kæft
+  > hold kæft
 }
 
 ! pattern (intent = enig, type = udsagn)
@@ -73,6 +76,8 @@
 {
   > %vrøvl
   > sikke noget %vrøvl
+  > Det er godt med dig
+  > Den er god med dig
 }
 
 ! pattern (intent = hvad_hvem_er, type = spm)
@@ -222,6 +227,8 @@
   > vildt
   > åhåh
   > åh nej
+  > nøj
+  > nøøj
 }
 
 ! pattern (intent = afventende, type = reaktion, holdning = nul)
@@ -230,6 +237,7 @@
   > hmm
   > hmmm
   > hmmmm
+  > hmh
   > okay
 }
 
@@ -305,6 +313,8 @@
   > rend og hop
   > hop i havet
   > dø
+  > kæft
+  > hold kæft
 }
 
 ! pattern (intent = advare, type = udsagn)
