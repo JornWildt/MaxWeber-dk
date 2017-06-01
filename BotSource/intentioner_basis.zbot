@@ -16,6 +16,7 @@
   > helt sikkert
   > absolut
   > meget
+  > hørt
 }
 
 ! pattern (intent = nej, type = udsagn)
@@ -66,6 +67,14 @@
   > godt
 }
 
+! concept vrøvl = vrøvl, sludder, ævl, pølsesnak
+
+! pattern (intent = uenig, type = udsagn)
+{
+  > %vrøvl
+  > sikke noget %vrøvl
+}
+
 ! pattern (intent = hvad_hvem_er, type = spm)
 {
   > hvad er {emne}
@@ -73,7 +82,7 @@
   > fortæl om {emne}
   > fortæl mig om {emne}
   > forklar {emne}
-  > kan du foreklare {emne} for mig
+  > kan du forklare {emne} for mig
   > sig noget om {emne}
   > kender du {emne}
   > ved du hvad {emne} er
@@ -98,6 +107,10 @@
   > nævn en {emne}
   > nævn et {emne}
   > nævn et par {emne}
+  > kan du nævne nogle {emne}
+  > kan du nævne en {emne}
+  > kan du nævne et {emne}
+  > kan du nævne et par {emne}
 }
 
 ! pattern (intent = hvor_gammel_er, type = spm)

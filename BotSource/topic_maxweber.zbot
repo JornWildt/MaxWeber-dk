@@ -78,6 +78,10 @@
 ! start_topic MaxWeber
 
 ! topic MaxWeber
+[
+  >> hvor_blev_du_født
+  ! continue
+]
 {
   T> Jeg blev født i Erfurt den 21. april 1864
   ! answer

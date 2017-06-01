@@ -27,6 +27,12 @@
 : Godt
 : Fint
 
+>> uenig
+! weight 0.8
+: Så siger vi det.
+: Det mener jeg ikke.
+: Aha?
+
 >> fornærme
 >> bande
 ! weight 0.8

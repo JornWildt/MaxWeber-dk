@@ -13,57 +13,57 @@
 
 ! define (dyr)
 {
-  "Krokodille" (krokodillen, krokodiller, krokodillerne):
+  "krokodille" (krokodillen, krokodiller, krokodillerne):
     intro: "Krokodillen er et stort, kraftigt bygget, firbenlignende krybdyr med lang, flad snude og øjne, ører og næsebor placeret øverst på hovedet. Krokodillen svømmer godt og kan desuden bevæge sig på land.";
     dyreklasse: krybdyr;
     levested: <Afrika>, <Asien>, <Sydamerika>.
     
-  "Elefant" (elefanten, elefanter, elefanterne):
+  "elefant" (elefanten, elefanter, elefanterne):
     intro: "Elefanten er et stort gråt dyr med en lang snabel.";
     dyreklasse: pattedyr;
     levested: <Afrika>, <Indien>, <Asien>.
     
-  "Delfin" (delfinen, delfiner, delfinerne):
+  "delfin" (delfinen, delfiner, delfinerne):
     intro: "Delfiner er havpattedyr, der minder meget om hvaler.";
     dyreklasse: pattedyr.
     
-  "Mus" (musen, mus, musene):
+  "mus" (musen, mus, musene):
     intro: "Mus er små nuttede væsner, som udgør den største gnaverfamilie.";
     dyreklasse: pattedyr.
     
-  "Rotte" (rotten, rotter, rotterne):
+  "rotte" (rotten, rotter, rotterne):
     intro: "Rotter! Hæslige kræ, der lever i kloaker. Jeg bryder mig virkelig ikke om den slags dyr.";
     dyreklasse: pattedyr.
     
-  "Hjort" (hjorten, hjorte, hjortene):
+  "hjort" (hjorten, hjorte, hjortene):
     intro: "Hjorte er en klasse af pattedyr (faktisk hovdyr) - herunder fx kronhjort, rådyr og dådyr.";
     dyreklasse: pattedyr.
     
-  "Kronhjort" (kronhjorten, kronhjorte, kronhjortene, krondyr, krondyret, kronvildt, kronvildet):
+  "kronhjort" (kronhjorten, kronhjorte, kronhjortene, krondyr, krondyret, kronvildt, kronvildet):
     intro: "Kronhjorten er Danmarks største vildtlevende pattedyr - og et ualmindeligt smukt dyr, om jeg må sige det.";
     dyreklasse: pattedyr.
     
-  "Rådyr" (rådyret, rådyr, rådyrene):
+  "rådyr" (rådyret, rådyr, rådyrene):
     intro: "Rådyret er den mindste hjorteart i Danmark.";
     dyreklasse: pattedyr.
     
-  "Dådyr" (dådyret, dådyr, dådyrene):
+  "dådyr" (dådyret, dådyr, dådyrene):
     intro: "Dådyret er en middelstor hjort.";
     dyreklasse: pattedyr.
     
-  "Elg" (elgen, elge, elgene):
+  "elg" (elgen, elge, elgene):
     intro: "Et kæmpestort brunt dyr med gevir.";
     dyreklasse: pattedyr.
     
-  "Rensdyr" (rensdyret, rensdyr, rensdyrene):
+  "rensdyr" (rensdyret, rensdyr, rensdyrene):
     intro: "Julemandens kane du ved ;-)";
     dyreklasse: pattedyr.
     
-  "Egern" (egernet, egern, egerne):
+  "egern" (egernet, egern, egerne):
     intro: "Egernet er endnu en af disse små fascinerende gnavere.";
     dyreklasse: pattedyr.
     
-  "Flagermus" (flagermusen, flagermus, flagermusene):
+  "flagermus" (flagermusen, flagermus, flagermusene):
     intro: "Flagermusen er et yderst interessant lille væsen. Det ligner en flyvende mus og finder dets føde med ultralyd.";
     dyreklasse: pattedyr.
 }

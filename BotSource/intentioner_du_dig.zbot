@@ -80,3 +80,11 @@
   > du er så sød
   > du er %klog
 }
+
+! pattern (intent = hvor_blev_du_født)
+{
+  > hvor blev du født
+  > hvor er du født
+  > hvad er dit fødested
+  > hvor kommer du fra
+}

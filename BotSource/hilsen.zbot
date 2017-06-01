@@ -18,9 +18,9 @@
 ! set user.name = $navn
 : Okay, <user.name>
 
->
+> *
 ! when (!user.name)
-: Hvad hedder De (<user.name>)?
+: Hvad hedder De?
 : Hvad er Deres navn?
 ! answer
 {
@@ -30,11 +30,11 @@
   : Sagde De <user.name>?
   ! answer
   {
-    > %ja
+    >> ja
     : Ikke noget dårligt navn, <user.name>
     ! continue
     
-    > %nej
+    >> nej
     : Men hvad så?
     ! answer
     {

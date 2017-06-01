@@ -109,6 +109,11 @@
 
   >> x_findes (emne:gud)
   : Det mener De måske.
+
+  > gud er død
+  > allah er stor
+  > allahu akbar
+  : Det siger du. Jeg er nu ikke så sikker.
   
   >> er_du (emne:religiøs)
   : Nej. Jeg tror ikke på nogen religiøs guddommelighed.
@@ -116,13 +121,14 @@
   > *
   ! weight 0.8
   : Er De religiøs?
+  : Tror de på en form for guddommelighed?
   ! answer
   {
     >> ja
     : Hmm. De tror altså på en højerestående guddommelighed. Må jeg spørge hvilken?
     
     >> nej
-    : Godt. Det gør jeg heller ikke.
+    : Godt. Religion, gud og guddommelighed passer ikke ind i det moderne samfund.
     ! continue
   }
 ]

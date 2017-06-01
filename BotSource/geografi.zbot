@@ -1,13 +1,13 @@
 ! define (type)
 {
-  by:
+  by (byer):
     er: "er en by";
     intro: "En by er sted hvor mennesker samles og bor.".
     
-  sted:
+  sted (steder):
     er: "er et sted".
     
-  land:
+  land (lande):
     er: "er et land";
     intro: "Et land er et politisk bestemt geografisk område.".
 }

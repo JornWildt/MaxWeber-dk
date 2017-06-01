@@ -1,4 +1,4 @@
-! define (by)
+! define (by, sted)
 {
   "Tokyo":
     befolkning: 35;
