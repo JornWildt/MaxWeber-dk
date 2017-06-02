@@ -321,6 +321,7 @@
   > det passer ikke
   > løgn
   > fake news
+  > det gør jeg ikke
 }
 
 ! pattern (intent = jeg_hedder, type = udsagn)

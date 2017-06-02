@@ -8,20 +8,21 @@
 {
   dyr:
     er: "er et dyr.".
+    
+  pattedyr:
+    er: "er et pattedyr".
 }
 
 
-! define (dyr)
+! define (dyr, pattedyr)
 {
-  "krokodille" (krokodillen, krokodiller, krokodillerne):
-    intro: "Krokodillen er et stort, kraftigt bygget, firbenlignende krybdyr med lang, flad snude og øjne, ører og næsebor placeret øverst på hovedet. Krokodillen svømmer godt og kan desuden bevæge sig på land.";
-    dyreklasse: krybdyr;
-    levested: <Afrika>, <Asien>, <Sydamerika>.
-    
   "elefant" (elefanten, elefanter, elefanterne):
     intro: "Elefanten er et stort gråt dyr med en lang snabel.";
     dyreklasse: pattedyr;
     levested: <Afrika>, <Indien>, <Asien>.
+    
+  "bæver" (bæveren, bævere, bæverne):
+    dyreklasse: pattedyr.
     
   "delfin" (delfinen, delfiner, delfinerne):
     intro: "Delfiner er havpattedyr, der minder meget om hvaler.";
@@ -31,7 +32,7 @@
     intro: "Mus er små nuttede væsner, som udgør den største gnaverfamilie.";
     dyreklasse: pattedyr.
     
-  "rotte" (rotten, rotter, rotterne):
+  "rotte" (rotten, rotter, rotterne, "brun rotte", "sort rotte"):
     intro: "Rotter! Hæslige kræ, der lever i kloaker. Jeg bryder mig virkelig ikke om den slags dyr.";
     dyreklasse: pattedyr.
     
@@ -65,5 +66,29 @@
     
   "flagermus" (flagermusen, flagermus, flagermusene):
     intro: "Flagermusen er et yderst interessant lille væsen. Det ligner en flyvende mus og finder dets føde med ultralyd.";
+    dyreklasse: pattedyr.
+    
+  "sæl" (sælen, sæler, sælerne):
+    dyreklasse: pattedyr.
+    
+  "grævling" (grævlingen, grævlinge, grævlinger):
+    dyreklasse: pattedyr.
+    
+  "hare" (haren, harer, harerne):
+    dyreklasse: pattedyr.
+    
+  "muldvarp" (muldvarpen, muldvarpe, muldvarperne):
+    dyreklasse: pattedyr.
+    
+  "pindsvin" (pindsvinet, pindsvinene):
+    dyreklasse: pattedyr.
+    
+  "odder" (odderen, oddere, odderne):
+    dyreklasse: pattedyr.
+    
+  "ulv" (ulven, ulve, ulvene):
+    dyreklasse: pattedyr.
+    
+  "kanin" (kaninen, kaniner, kaninerne):
     dyreklasse: pattedyr.
 }

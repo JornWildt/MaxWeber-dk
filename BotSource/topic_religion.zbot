@@ -2,7 +2,7 @@
 {
   gud (guder):
     er: "er en gud.";
-    intro: "En gud er et postuleret højere væsen i en religion, og formodes at kunne gøre overnaturlige eller uforklarlige ting. Guder anses ofte for at være udødelige.";
+    intro: "En gud er et postuleret højere væsen i en religion, og formodes at kunne gøre overnaturlige eller uforklarlige ting. Guder anses ofte for at være udødelige. Personligt mener jeg ikke at det giver meget mening.";
     topic: religion.
     
   religion (religioner):
@@ -126,6 +126,13 @@
   {
     >> ja
     : Hmm. De tror altså på en højerestående guddommelighed. Må jeg spørge hvilken?
+    ! answer
+    {
+      >> kendt_ord (emne:gud)
+      : Aha.
+      > *
+      : Nåh, det er ikke en guddommelighed jeg har hørt om før.
+    }
     
     >> nej
     : Godt. Religion, gud og guddommelighed passer ikke ind i det moderne samfund.
@@ -149,5 +156,23 @@
   
   T> Jeg tror ikke selv på nogen form for guddommelighed. 
      +: Der er ikke plads til såddanne i det rationelt tænkende menneske. Er De selv religiøs?
-  # ja, nej, hvorfor
+  ! answer
+  {
+    >> nej
+    : De er et klogt menneske.
+    
+    >> ja
+    : Åh nej. Forstår De da ingenting?
+    ! answer
+    {
+      >> nej
+      : Så kan jeg ikke gøre mere.
+      >> Ja
+      : Sådan skal det være.
+    }
+  }
+    
+  >> uenig
+  : Ja, det siger De måske. Men tror mig - enhver form for religion er meningsløs.
+  : Måske. Uddødelige guder - giver det mening?
 }
