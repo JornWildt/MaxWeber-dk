@@ -1,4 +1,5 @@
->> { intent = hvad_hvem_er, emne = * }
+>> hvad_hvem_er (emne)
+>> kendt_ord (emne)
 # Lookup any RDF data available
 ! call RDF.Query("
 SELECT ?name ?typeName ?intro ?typeEr ?topic

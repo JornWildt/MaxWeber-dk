@@ -1,5 +1,5 @@
 >> forbløffet
-! weight 0.8
+#! weight 0.8
 : Ja det må du nok sige.
 : Ih ja.
 : !
@@ -7,31 +7,45 @@
 ! continue
 
 >> skuffet
-! weight 0.8
+#! weight 0.8
 : Ja, sådan er det engang i mellem.
 : Beklager
 ! continue
 
 >> morsomt
-! weight 0.8
+#! weight 0.8
 : :-)
 : Nemlig
 ! continue
 
 >> afventende
-! weight 0.8
+#! weight 0.8
 ! continue
 
 >> enig
-! weight 0.8
+#! weight 0.8
 : Godt
 : Fint
 
 >> uenig
-! weight 0.8
+#! weight 0.8
 : Så siger vi det.
 : Det mener jeg ikke.
-: Aha?
+
+>> uenig
+! weight 0.8
+: Og hvorfor mener du det?
+: Aha? Og?
+! answer
+{
+  >> { type = udsagn }
+  >> { type = reaktion }
+  : Ser man det.
+  : Okay.
+  
+  >> { type = spm }
+  : Hov, øjeblik. Jeg spurgte først.
+}
 
 >> fornærme
 >> bande
@@ -39,3 +53,37 @@
 : Pudsigt du siger det, jeg overvejede netop at sige det samme.
 : Jeg håber at det hjalp.
 : Ja, vi kan allesammen havde det lidt svært ind i mellem.
+
+>> du_gentager_dig_selv
+: Nåh, gør jeg det.
+: Ser man det.
+: Ja, det sker.
+: Efter 150 år, hvad havde du så regnet med?
+
+>> { type = spm }
+! weight 0.6
+! repeatable
+: Hvad får Dem til at spørge om det?
+: Det er jeg desværre ikke i stand til at forklare.
+: Hmmm
+: Desværre, det ved jeg ikke
+
+>> test
+: Prøver De noget særligt?
+: Er der noget galt?
+: Er alt som det skal være?
+! answer
+{
+  > *
+  : Ah, okay.
+}
+
+> *
+! weight 0.5
+! repeatable
+: Hmmmm
+: Aha
+: Nåh
+: Der kan man se
+: Tjah
+

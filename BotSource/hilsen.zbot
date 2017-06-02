@@ -19,6 +19,7 @@
 : Okay, <user.name>
 
 > *
+! weight 0.9
 ! when (!user.name)
 : Hvad hedder De?
 : Hvad er Deres navn?
@@ -27,7 +28,7 @@
   > +
   ! weight 0.9
   ! set user.name = $1
-  : Sagde De <user.name>?
+  : Hedder De <user.name>?
   ! answer
   {
     >> ja

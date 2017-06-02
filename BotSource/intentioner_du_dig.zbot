@@ -81,10 +81,21 @@
   > du er %klog
 }
 
-! pattern (intent = hvor_blev_du_født)
+! pattern (intent = hvor_blev_du_født, type = udsagn)
 {
   > hvor blev du født
   > hvor er du født
   > hvad er dit fødested
   > hvor kommer du fra
+}
+
+! pattern (intent = du_gentager_dig_selv, type = udsagn)
+{
+  > du gentager dig selv
+  > det har du sagt
+  > det har du allerede sagt
+  > det har du sagt før
+  > det har du sagt tidligere
+  > det sagde du også lige før
+  > det sagde du også før
 }

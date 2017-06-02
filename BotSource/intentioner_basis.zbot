@@ -1,85 +1,3 @@
-! pattern (intent = ja, type = udsagn)
-{
-  > ja
-  > jatak
-  > ja tak
-  > jaja
-  > gerne
-  > yep
-  > yes
-  > ok
-  > okay
-  > nemlig
-  > jep
-  > check
-  > right
-  > helt sikkert
-  > absolut
-  > meget
-  > hørt
-  > selvfølgelig
-}
-
-! pattern (intent = nej, type = udsagn)
-{
-  > nej
-  > niks
-  > nix
-  > no
-  > nope
-  > nej tak
-  > nejtak
-  > næh
-  > helst ikke
-  > egentlig ikke
-  > absolut ikke
-  > bestemt ikke
-  > du kan rende mig
-  > du kan rende mig noget så grusomt
-  > skrid
-  > hold nu op
-  > stop
-  > kæft
-  > hold kæft
-}
-
-! pattern (intent = enig, type = udsagn)
-{
-  > enig
-  > helt enig
-  > det har du ret i
-  > nemlig
-  > det mener jeg også
-  > det gør jeg også
-  > helt og aldeles enig
-  > jeg tror dig
-  > jeg tror på dig
-  > det er jeg enig i
-  > helt klart
-  > det gør jeg også
-  > det mener jeg også
-  > det holder jeg også på
-  > kunne ikke være mere enig
-  > jeg kan ikke være mere enig
-  > jeg tror dig
-  > det tror jeg også
-  > smukt
-  > sådan
-  > flot
-  > fornemt
-  > godt
-}
-
-! concept vrøvl = vrøvl, sludder, ævl, pølsesnak
-
-! pattern (intent = uenig, type = udsagn)
-{
-  > %vrøvl
-  > sikke noget %vrøvl
-  > Det er godt med dig
-  > Den er god med dig
-}
-
 ! pattern (intent = hvad_hvem_er, type = spm)
 {
   > hvad er {emne}
@@ -215,6 +133,8 @@
 {
   > wow
   > wtf
+  > duh
+  > doh
   > what the fuck
   > verdammt
   > tak for kaffe
@@ -266,29 +186,18 @@
 
 ! pattern (intent = hilsen, type = udsagn)
 {
-  > godmorgen
-  > god morgen
-  > goddag
-  > godag
-  > god dag
-  > hej
-  > hejsa
-  > halløj
-  > hej med dig
-  > vær hilset
-  > dav
-  > davs
-  > hallo
-  > hey
-  > yo
-  > wolla
+  > %hilsen
+  > %hilsen {navn}
 }
 
 ! pattern (intent = farvel, type = udsagn)
 {
   > farvel
+  > farvel {navn}
   > vi ses
   > auf wienerschnitzel
+  > godnat
+  > sov godt
 }
 
 ! pattern (intent = bande, type = udsagn)
@@ -324,6 +233,96 @@
   > det gør du ikke igen
 }
 
+! pattern (intent = ja, type = udsagn)
+{
+  > ja
+  > jatak
+  > ja tak
+  > jaja
+  > gerne
+  > yep
+  > yes
+  > ok
+  > okay
+  > nemlig
+  > jep
+  > check
+  > right
+  > helt sikkert
+  > absolut
+  > meget
+  > hørt
+  > selvfølgelig
+}
+
+! pattern (intent = nej, type = udsagn)
+{
+  > nej
+  > niks
+  > nix
+  > no
+  > nope
+  > nej tak
+  > nejtak
+  > næh
+  > ikke
+  > helst ikke
+  > egentlig ikke
+  > absolut ikke
+  > bestemt ikke
+  > heller ikke
+  > overhovedet ikke
+  > du kan rende mig
+  > du kan rende mig noget så grusomt
+  > skrid
+  > hold nu op
+  > stop
+  > kæft
+  > hold kæft
+  > rager ikke dig
+}
+
+! pattern (intent = enig, type = udsagn)
+{
+  > enig
+  > helt enig
+  > det har du ret i
+  > nemlig
+  > det mener jeg også
+  > det gør jeg også
+  > helt og aldeles enig
+  > jeg tror dig
+  > jeg tror på dig
+  > det er jeg enig i
+  > helt klart
+  > det gør jeg også
+  > det mener jeg også
+  > det holder jeg også på
+  > kunne ikke være mere enig
+  > jeg kan ikke være mere enig
+  > jeg tror dig
+  > det tror jeg også
+  > smukt
+  > sådan
+  > flot
+  > fornemt
+  > godt
+}
+
+! concept vrøvl = vrøvl, sludder, ævl, pølsesnak
+
+! pattern (intent = uenig, type = udsagn)
+{
+  > %vrøvl
+  > sikke noget %vrøvl
+  > Det er godt med dig
+  > Den er god med dig
+  > forkert
+  > det passer ikke
+  > løgn
+  > fake news
+}
+
 ! pattern (intent = jeg_hedder, type = udsagn)
 {
   > jeg hedder ~ikke {navn}
@@ -335,4 +334,24 @@
   > {emne} findes
   > der findes {emne}
   > {emne} eksisterer
+}
+
+! pattern (intent = kendt_ord, type = udsagn)
+{
+  > {emne}
+}
+
+! pattern (intent = test, type = udsagn)
+{
+  > test
+  > tester
+  > dette er en prøve
+  > dette er en test
+  > Har du noget til denne
+  > hvad siger du til det her
+  > kender du denne
+  > hvad med det her
+  > hvad med dette
+  > forstår du det her
+  > forstår du hvad jeg siger
 }

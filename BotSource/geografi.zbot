@@ -128,5 +128,5 @@ WHERE
 : Har De brug for hjælp? Jeg kender lidt geografi. Spørg bare.
 
 > *
-! weight 0.8
+! weight 0.5
 : Jeg har forøvigt lært en smule geografi. Spørg mig fx om hvor Berlin ligger henne.
