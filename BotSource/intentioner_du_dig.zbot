@@ -48,6 +48,12 @@
   > snakker %du {sprog}
 }
 
+! pattern (intent = spiser_du, type = spm)
+{
+  > spiser du {emne}
+  > kan du lide {emne}
+}
+
 ! pattern (intent = hvor_bor_du, type = spm)
 {
   > hvor bor %du

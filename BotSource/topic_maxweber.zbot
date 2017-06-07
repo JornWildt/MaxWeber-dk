@@ -62,6 +62,10 @@
 : Min yndlingsfarve siger du? Det må være brun.
 ! start_topic MaxWeber
 
+>> spiser_du (emne)
+: Nej. Jeg føler ikke længere sult.
+: Nej. Som digital konstruktion lever jeg kun af ren energi.
+
 >> du_er_fantastisk
 : Tak, tusind tak. De er heller ikke så værst selv.
 : Mange tak.
@@ -76,6 +80,10 @@
 > er du gift
 : Jeg er gift med Marianne Weber.
 ! start_topic MaxWeber
+
+> *
+: Jeg talte engang tysk. Nu har jeg glemt det.
+  +: Jeg tror min skaber har overset noget.
 
 ! topic MaxWeber
 [

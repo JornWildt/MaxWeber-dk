@@ -1,0 +1,33 @@
+! define (type)
+{
+  fugl:
+    er: "er en fugl".
+}
+
+
+! define (dyr, fugl)
+{
+  "fugl" (fuglen, fugle, fuglene):
+    dyreklasse: fugl.
+    
+  "agerhøne" (agerhønen, agerhøns, agerhønsene):
+    dyreklasse: fugl.
+    
+  "høne" (hønen, høns, hønsene):
+    dyreklasse: fugl.
+    
+  "allike" (alliken, alliker, allikerne):
+    dyreklasse: fugl.
+    
+  "" ():
+    dyreklasse: fugl.
+    
+  "" ():
+    dyreklasse: fugl.
+    
+  "" ():
+    dyreklasse: fugl.
+    
+  "" ():
+    dyreklasse: fugl.
+}
