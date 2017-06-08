@@ -219,8 +219,6 @@
   > dit %idiot
   > fuck dig
   > jeg hader dig
-  > rend og hop
-  > hop i havet
   > dø
   > kæft
   > hold kæft
@@ -298,6 +296,7 @@
   > det gør jeg også
   > det mener jeg også
   > det holder jeg også på
+  > det ved jeg
   > kunne ikke være mere enig
   > jeg kan ikke være mere enig
   > jeg tror dig
@@ -317,11 +316,16 @@
   > sikke noget %vrøvl
   > Det er godt med dig
   > Den er god med dig
+  > %du snakker
   > forkert
   > det passer ikke
   > løgn
   > fake news
   > det gør jeg ikke
+  > spis brød til
+  > glem det
+  > rend og hop
+  > hop i havet
 }
 
 ! pattern (intent = jeg_hedder, type = udsagn)

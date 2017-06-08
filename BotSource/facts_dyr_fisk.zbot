@@ -1,7 +1,8 @@
 ! define (type)
 {
   fisk:
-    er: "er en fisk".
+    er: "er en fisk";
+    intro: "Fisk er noget der svømmer i havet. Jeg bryder mig ikke specielt om fisk".
 }
 
 
@@ -45,4 +46,12 @@
     
   "ål" (ålen, ålene):
     dyreklasse: fisk.
+    
+# --- Andre
+
+  "haj" (hajen, hajer, hajerne):
+    dyreklasse: fisk.
+
+  "blæksprutte" (blæksprutten, blæksprutter, blæksprutterne):
+    dyreklasse: blæksprutte.
 }
