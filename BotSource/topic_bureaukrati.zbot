@@ -1,76 +1,90 @@
-! define (bureakrati)
+! define (type)
 {
-  "bureaukrati" (bureaukratiet, bureaukratier, bureaukratierne):.
-  "bureaukrat" (bureaukrat, bureaukrater, bureaukraterne):.
-  "embedshierarki" (embedshierarkiet, embedshierarkierne):.
-  "hierarki" (hierarkiet, hierarkier, hierarkierne):.
-  "embed" (embedet, embeder, embederne):.
-  "myndighed" (myndigheden, myndigheder, myndighederne):.
-  "kontor" (kontoret, kontorer, kontorerne):.
-  "afdeling" (afdelingen, afdelinger, afdelingerne):.
+  emne_bureaukrati:
+    er: "Med \"forvaltning\" mener jeg den statslige, regionale og kommunale administration, der forbereder politiske beslutninger og administrerer lovgivningen.";
+    topic: emne_forvaltning.
 }
 
->> { intent = hvad_er, emne = bureakrati}
-# invoke -find svar-
-# start topic bureakrati
-: Åh, det er et eller andet fjollet.
-
-
-! entities (bureaukrati)
+! define (emne_bureaukrati)
 {
-  "stillinger", "stilling",
-  "dokumentation", "leder", 
-  
-  "forvaltning", "forvaltningen", 
-  "arkiv", "arkiver", "arkiverne",
-  "arbejdstid"
-}
-
-> *
-! weight 0.6
-: Ja, undskyld, men hvad mener De om mine teser omkring bureakratiet?
-! not_repeatable
-! answer
-{
-  > *
-  : Nåh, jamen så lad mig fortælle om dem.
-  ! answer
-  {
-    >> { intent = nej }
-    : Jawohl, så vil jeg foretage mig noget andet.
+  bureaukrati (bureaukratiet, bureaukratur):
+    topic: bureaukrati.
     
-    > +
-    ! weight 0.8
-    : Så gerne!
-    ! start_topic bureaukrati
-  }
+  embedsmænd (embedsmanden, embedsmændene):
+    topic: bureaukrati.
+    
+  embedshierarki (embedshierarkiet):
+    topic: bureaukrati.
 }
-
-> * %bureaukrati *
-: Har De hørt om bureaukratiet? 
-  +: Nåh ikke? 
-  +: Det er ellers et yderst spændende emne, som jeg har studeret længe.
-! not_repeatable
-! start_topic bureaukrati
 
 
 ! topic bureaukrati
+[
+  > *
+  : Jeg kan se at bureaukratiet i dag har fået et meget uheldig omdømme,
+    +: som inhumant, umoderne, langsommeligt, upersonlig og ufleksibelt.
+    +: Kort sagt, et skældsord for alt det, vi ikke kan lide ved store organisationer.
+    +: Da jeg beskrev bureaukratiet første gang for cirka hundrede år siden,
+    +: var der nogle langt mere positive årsager til bureaukratiet.
+    
+  > *
+  : Jeg er forøvrigt lige i gang med en ny artikel om bureaukratiet.
+    +: Jeg finder det utroligt spændende at sammenligne bureaukratiet i dag
+    +: med bureaukratiet som det var for hundrede år siden.
+    
+    # skriver du?
+    # er der andet som er spændende?
+    # det gør jeg også
+    # hvordan er det så i dag?
+    # hvordan var det dengang?
+]
 {
-  T> Bureaukriet er kendtetegnet ved en række forskellige egenskaber:
-     +: Der er et fast ordnet embedshierarki med over- og underordnede stillinger, 
+  T> Bureaukriet er kendtetegnet ved en række forskellige egenskaber,
+     +: som hver for sig er med til at sikre det civiliserede samfund.
+     
+  T> Tag for eksempel den langsommelighed, som bureaukratier ofte kritiseres for.
+     +: Den handler om at skabe tid til at belyse sager grundigt og sikre retfærdige udfald.
+     +: Trægheden i systemet er nødvendig for at skabe tid til, 
+     +: at ting kan blive undersøgt og afdækket grundigt og til bunds
+
+  T> Inhumanitet og bureaukratiers renommé for at være upersonlige robotagtige maskinerier,
+     +: er et andet hyppigt kritikpunkt, der også dækker over en vigtig mekanisme.
+     +: Det skal sikre, at folk bliver behandlet ens, og at embedsmændene ikke 
+     +: lader embedsførelsen påvirke af deres personlige holdninger.
+     
+  T> Hør, hvad mener De egentlig om bureaukratiet? Er det godt eller skidt?
+  ! answer
+  {
+    >> ja
+    >> enig
+    >> { holdning = pos }
+    : Godt. Jeg mener også selv at bureaukratiet stadig har sin berettigelse.
+    
+    > *
+    : Hvorfor?
+    ! answer
+    {
+      > *
+      : Ah ... det vil jeg tage med i mine betragtninger.
+      : Hmmm. Lad mig tænke lidt over det.
+    }
+  }
+
+  T> Jeg beskriver bureaukratiet ved følgende egenskaber:
+     +: 1) Der er et fast ordnet embedshierarki med over- og underordnede stillinger, 
      +: hvor de med større myndighed har opsyn med dem med mindre.
      
-  T> Når bureaukratiet er fuldt udviklet, 
+  T> 2) Når bureaukratiet er fuldt udviklet, 
      +: er embedshierarkiet organiseret med kun en øverste leder på hvert trin. 
      
-  T> Forvaltningen bygger på skriftlig dokumentation i form af sagsakter, 
+  T> 3) Forvaltningen bygger på skriftlig dokumentation i form af sagsakter, 
      +: som opbevares i arkiver, og på en stab af tjenestemænd og skrivere. 
      +: Tilsammen danner disse en forvaltningsenhed som kaldes et kontor.
      
-  T> Når embedet er fuldt udviklet, lægger det beslag på embedsindehaverens fulde tid, 
+  T> 4) Når embedet er fuldt udviklet, lægger det beslag på embedsindehaverens fulde tid, 
      +: selvom der findes klare grænser for den daglige arbejdstid.
   
-  T> De ansatte udvælges desuden efter faglig dygtighed, 
+  T> 5) De ansatte udvælges desuden efter faglig dygtighed, 
      +: hvorved nepotisme undgås - og ansættelse sker ofte på livstid!
      
   T> Bureaukratiet har også været genstand for megen diskussion og kritik:
@@ -88,7 +102,15 @@
      +: - eller har nået det niveau hvor man er tydeligt inkompetent. 
      +: Det er selvfølgelig det sidste som sker for de fleste.
      +: En meget trist tendens siger jeg.
-
-  >> { intent = hvad_er, emne = *}
-  : Åh, det er et eller fjollet.
+     
+  >> enig
+  : Fantastisk. Det glæder mig meget at du deler mine holdninger.
+  : Måske.
+  : Tak.
+  ! continue
+  
+  >> uenig
+  : Nåh? Ja, der kan man bare se.
+  : Tjah, jeg forventer ikke at alle er enige med mig.
+  ! continue
 }

@@ -97,6 +97,7 @@
   > mener du det
   > vil du uddybe det
   > kan du uddybe det
+  > hvad mener du med det
 }
 
 ! pattern (intent = hvordan, type = spm)
@@ -200,7 +201,7 @@
   > sov godt
 }
 
-! pattern (intent = bande, type = udsagn)
+! pattern (intent = bande, type = udsagn, holdning = neg)
 {
   > fuck
   > for fanden
@@ -212,19 +213,20 @@
   > shit
 }
 
-! pattern (intent = fornærme, type = udsagn)
+! pattern (intent = fornærme, type = udsagn, holdning = neg)
 {
   > %idiot
   > din %idiot
   > dit %idiot
   > fuck dig
+  > skråt op
   > jeg hader dig
   > dø
   > kæft
   > hold kæft
 }
 
-! pattern (intent = advare, type = udsagn)
+! pattern (intent = advare, type = udsagn, holdning = neg)
 {
   > så er det godt
   > pas lige på
@@ -270,14 +272,19 @@
   > bestemt ikke
   > heller ikke
   > overhovedet ikke
+  > stop
+}
+
+! pattern (intent = nej, type = udsagn, holdning = neg)
+{
   > du kan rende mig
   > du kan rende mig noget så grusomt
   > skrid
   > hold nu op
-  > stop
   > kæft
   > hold kæft
   > rager ikke dig
+  > rend mig
 }
 
 ! pattern (intent = enig, type = udsagn)
@@ -310,7 +317,7 @@
 
 ! concept vrøvl = vrøvl, sludder, ævl, pølsesnak
 
-! pattern (intent = uenig, type = udsagn)
+! pattern (intent = uenig, type = udsagn, holdning = neg)
 {
   > %vrøvl
   > sikke noget %vrøvl

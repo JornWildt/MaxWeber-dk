@@ -23,11 +23,13 @@
 ! continue
 
 >> enig
+>> ja
 #! weight 0.8
 : Godt
 : Fint
 
 >> uenig
+>> nej
 #! weight 0.8
 : Så siger vi det.
 : Det mener jeg ikke.

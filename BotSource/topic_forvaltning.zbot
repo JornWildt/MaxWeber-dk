@@ -1,0 +1,32 @@
+! define (type)
+{
+  emne_forvaltning (forvaltning, forvaltningen, "offentlig forvaltning"):
+    er: "Med \"forvaltning\" mener jeg den statslige, regionale og kommunale administration, der forbereder politiske beslutninger og administrerer lovgivningen.";
+    topic: emne_forvaltning.
+}
+
+! define (emne_forvaltning)
+{
+  centraladministration (centraladministrationen):
+    topic: forvaltning.
+    
+  statsforvaltning (statsforvaltningen):
+    intro: "De vigtigste dele af statsforvaltning er centraladministrationen og den lokale statsforvaltning. Centraladministrationen er delt i en række ministerier. Idag består den lokale statsforvaltning af myndigheder som fx. politi, kriminalforsorg og arbejdstilsyn samt institutioner som Rigsarkivet, universiteter mv.";
+    topic: forvaltning.
+    
+  ombudsmand (ombudsmanden, "folketingets ombudsmand"):
+    topic: forvaltning.
+}
+
+
+! topic forvaltning
+{
+  T> Kernen i den offentlige forvaltning er statsforvaltningen og kommunalforvaltningen.
+  
+  T> Forvaltningen er numerisk langt den største del af dansk statsstyre.
+  
+  T> Det er forvaltningen, som stiller velfærdsstatens ydelser til rådighed for borgerne, 
+     +: som opkræver skatter og afgifter samt står for den fintmaskede retlige regulering, der præger samfundet.
+  
+  T> Og sådan er der jo så meget, som man siger.
+}

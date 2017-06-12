@@ -1,9 +1,21 @@
+! define (verdensdel, sted)
+{
+  "Europa":.
+  "Nordamerika":.
+  "Sydamerika":.
+  "Asien":.
+  "Afrika":.
+  "Antarktis":.
+  "Oceanien":.
+}
+
 ! define (land, sted)
 {
   "Afghanistan":
     hovedstad: <Kabul>.
   "Albanien":
-    hovedstad: <Tirana>.
+    hovedstad: <Tirana>;
+    sted: <Europa>.
   "Algeriet":
     hovedstad: <Algier>.
   "Amerikansk Samoa" (Samoa):
@@ -31,7 +43,8 @@
   "Barbados":
     hovedstad: <Bridgetown>.
   "Belgien":
-    hovedstad: <Bryssel>.
+    hovedstad: <Bryssel>;
+    sted: <Europa>.
   "Belize":
     hovedstad: <Belmopan>.
   "Benin":
@@ -51,7 +64,8 @@
   "Brunei":
     hovedstad: <Bandar Seri Begawan>.
   "Bulgarien":
-    hovedstad: <Sofia>.
+    hovedstad: <Sofia>;
+    sted: <Europa>.
   "Burkina Faso":
     hovedstad: <Ouagadougou>.
   "Burundi":
@@ -81,7 +95,8 @@
   "Cypern":
     hovedstad: <Nicosia>.
   "Danmark":
-    hovedstad: <København>.
+    hovedstad: <København>;
+    sted: <Europa>.
   "Djibouti":
     hovedstad: <Djibouti>.
   "Dominica":
@@ -99,7 +114,8 @@
   "Eritrea":
     hovedstad: <Asmara>.
   "Estland":
-    hovedstad: <Tallinn>.
+    hovedstad: <Tallinn>;
+    sted: <Europa>.
   "Etiopien":
     hovedstad: <Addis Abeba>.
   "Fiji":
@@ -107,27 +123,33 @@
   "Filippinerne":
     hovedstad: <Manila>.
   "Finland":
-    hovedstad: <Helsingfors>.
+    hovedstad: <Helsingfors>;
+    sted: <Europa>.
   "Forenede Arabiske Emirater":
     hovedstad: <Abu Dhabi>.
   "Frankrig":
-    hovedstad: <Paris>.
+    hovedstad: <Paris>;
+    sted: <Europa>.
   "Færøerne":
-    hovedstad: <Tórshavn>.
+    hovedstad: <Tórshavn>;
+    sted: <Europa>.
   "Gabon":
     hovedstad: <Libreville>.
   "Gambia":
     hovedstad: <Banjul>.
   "Georgien":
-    hovedstad: <Tbilisi>.
+    hovedstad: <Tbilisi>;
+    sted: <Europa>.
   "Ghana":
     hovedstad: <Accra>.
   "Grenada":
     hovedstad: <Saint George's>.
   "Grækenland":
-    hovedstad: <Athen>.
+    hovedstad: <Athen>;
+    sted: <Europa>.
   "Grønland":
-    hovedstad: <Nuuk>.
+    hovedstad: <Nuuk>;
+    sted: <Europa>.
   "Guatemala":
     hovedstad: <Guatemala City>.
   "Guinea":
@@ -139,7 +161,8 @@
   "Haiti":
     hovedstad: <Port au Prince>.
   "Holland" (Nederlandene):
-    hovedstad: <Amsterdam>.
+    hovedstad: <Amsterdam>;
+    sted: <Europa>.
   "Honduras":
     hovedstad: <Tegucigalpa>.
   "Hviderusland":
@@ -153,9 +176,11 @@
   "Iran" (Persien):
     hovedstad: <Teheran>.
   "Irland":
-    hovedstad: <Dublin>.
+    hovedstad: <Dublin>;
+    sted: <Europa>.
   "Island":
-    hovedstad: <Reykjavik>.
+    hovedstad: <Reykjavik>;
+    sted: <Europa>.
   "Israel":
     hovedstad: <Tel Aviv>.
   "Italien":
@@ -185,7 +210,8 @@
 #  "Kosovo":
 #    hovedstad: <>.
   "Kroatien":
-    hovedstad: <Zagreb>.
+    hovedstad: <Zagreb>;
+    sted: <Europa>.
   "Kuwait":
     hovedstad: <Kuwait City>.
   "Laos":
@@ -201,11 +227,14 @@
   "Libyen":
     hovedstad: <Tripoli>.
   "Liechtenstein":
-    hovedstad: <Vaduz>.
+    hovedstad: <Vaduz>;
+    sted: <Europa>.
   "Litauen":
-    hovedstad: <Vilnius>.
+    hovedstad: <Vilnius>;
+    sted: <Europa>.
   "Luxembourg":
-    hovedstad: <Luxembourg>.
+    hovedstad: <Luxembourg>;
+    sted: <Europa>.
   "Madagaskar":
     hovedstad: <Antananarivo>.
   "Makedonien":
@@ -235,11 +264,13 @@
 #  "Moldova":
 #    hovedstad: <>.
   "Monaco":
-    hovedstad: <Monaco>.
+    hovedstad: <Monaco>;
+    sted: <Europa>.
   "Mongoliet":
     hovedstad: <Ulan Bator>.
   "Montenegro":
-    hovedstad: <Podgorica>.
+    hovedstad: <Podgorica>;
+    sted: <Europa>.
   "Mozambique":
     hovedstad: <Maputo>.
   "Myanmar" (Burma):
@@ -261,7 +292,8 @@
 #  "Niue":
 #    hovedstad: <>.
   "Norge":
-    hovedstad: <Oslo>.
+    hovedstad: <Oslo>;
+    sted: <Europa>.
   "Oman":
     hovedstad: <Muskat>.
   "Pakistan":
@@ -281,15 +313,18 @@
 #  "Pitcairn":
 #    hovedstad: <>.
   "Polen":
-    hovedstad: <Warszawa>.
+    hovedstad: <Warszawa>;
+    sted: <Europa>.
   "Portugal":
-    hovedstad: <Lissabon>.
+    hovedstad: <Lissabon>;
+    sted: <Europa>.
 #  "Puerto Rico":
 #    hovedstad: <>.
   "Qatar":
     hovedstad: <Doha>.
   "Rumænien":
-    hovedstad: <Bukarest>.
+    hovedstad: <Bukarest>;
+    sted: <Europa>.
   "Rusland":
     hovedstad: <Moskva>.
   "Rwanda":
@@ -311,11 +346,13 @@
   "Saudi Arabien":
     hovedstad: <Riyadh>.
   "Schweiz":
-    hovedstad: <Bern>.
+    hovedstad: <Bern>;
+    sted: <Europa>.
   "Senegal":
     hovedstad: <Dakar>.
   "Serbien":
-    hovedstad: <Beograd>.
+    hovedstad: <Beograd>;
+    sted: <Europa>.
 #  "Seychellerne":
 #    hovedstad: <>.
   "Sierra Leone":
@@ -323,21 +360,26 @@
   "Singapore":
     hovedstad: <Singapore>.
   "Slovakiet":
-    hovedstad: <Bratislava>.
+    hovedstad: <Bratislava>;
+    sted: <Europa>.
   "Slovenien":
-    hovedstad: <Ljubljana>.
+    hovedstad: <Ljubljana>;
+    sted: <Europa>.
   "Somalia":
     hovedstad: <Mogadishu>.
   "Spanien":
-    hovedstad: <Madrid>.
+    hovedstad: <Madrid>;
+    sted: <Europa>.
   "Sri Lanka" (Ceylon):
     hovedstad: <Colombo>.
   "Storbritannien" (Nordirland):
-    hovedstad: <London>.
+    hovedstad: <London>;
+    sted: <Europa>.
   "Sudan":
     hovedstad: <Juba>.
   "Sverige":
-    hovedstad: <Stockholm>.
+    hovedstad: <Stockholm>;
+    sted: <Europa>.
   "Swaziland":
     hovedstad: <Mbabane>.
   "Sydafrika":
@@ -373,13 +415,16 @@
   "Tyrkiet":
     hovedstad: <Ankara>.
   "Tyskland":
-    hovedstad: <Berlin>.
+    hovedstad: <Berlin>;
+    sted: <Europa>.
   "Uganda":
     hovedstad: <Kampala>.
   "Ukraine":
-    hovedstad: <Kijev>.
+    hovedstad: <Kijev>;
+    sted: <Europa>.
   "Ungarn":
-    hovedstad: <Budapest>.
+    hovedstad: <Budapest>;
+    sted: <Europa>.
   "Uruguay":
     hovedstad: <Montevideo>.
   "USA":
@@ -389,7 +434,8 @@
   "Vanuatu":
     hovedstad: <Port Vila>.
   "Vatikanet" (Vatikanstaten):
-    hovedstad: <Vatikanet>.
+    hovedstad: <Vatikanet>;
+    sted: <Europa>.
   "Venezuela":
     hovedstad: <Caracas>.
 #  "Vestsahara":
@@ -405,7 +451,8 @@
   "Ækvatorialguinea":
     hovedstad: <Malabo>.
   "Østrig":
-    hovedstad: <Wien>.
+    hovedstad: <Wien>;
+    sted: <Europa>.
   "Østtimor":
     hovedstad: <Dili>.
 }
