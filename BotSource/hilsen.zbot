@@ -11,7 +11,6 @@
 > %hilsen
 ! when (user.name)
 : Velkommen <user.name>
-: Vær hilset <user.name>
 ! continue
 
 >> { intent = jeg_hedder, navn = * }

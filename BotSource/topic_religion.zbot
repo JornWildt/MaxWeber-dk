@@ -119,9 +119,8 @@
   : Nej. Jeg tror ikke på nogen religiøs guddommelighed.
   
   > *
-  ! weight 0.8
-  : Er De religiøs?
-  : Tror de på en form for guddommelighed?
+  : Jeg går ikke selv i kirke. Men hvad med Dem? Er De religiøs?
+  : Nu tror jeg ikke selv på nogen guder. Men hvad med Dem? Tror de på en form for guddommelighed?
   ! answer
   {
     >> ja

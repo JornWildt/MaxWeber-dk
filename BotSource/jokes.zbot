@@ -1,6 +1,30 @@
 ! concept joke = joke, vits, vittighed
 
-<joke> (fortæl|sig|giv) en? %joke
+! pattern (intent = joke, type = udsagn)
+{
+  > fortæl en %joke
+  > giv en %joke
+  > sig noget sjovt
+  > kender du en %joke
+  > kan du fortælle en %joke
+}
+
+> *
+! weight 3
+: Vil De høre noget sjovt?
+: Hvad med en lille vittighed?
+! answer
+{
+  >> ja
+  : Så gerne
+  ! continue at joke
+  
+  >> nej
+  : Ok.
+  : Jamen så må det blive en anden gang.
+}
+
+<joke>
 : Forfængelighed er et meget udbredt træk og sandsynligvis er ingen helt fri for det.\
 Især, blandt lærde og akademiske kredse, er det sådan en slags erhvervssygdom.
 : Politik er lavet med hovedet, ikke med de andre dele af kroppen. Eller sjælen. 

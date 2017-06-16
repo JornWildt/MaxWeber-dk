@@ -1,16 +1,6 @@
-﻿! concept stoppested = station, holdeplads
-! concept transportform = tog, toget, bus, bussen, metro, metroen
-! concept afgår = kører, afgår, går
+﻿! concept afgår = kører, afgår, går
 
-### Debugging rules
-#> hkt +
-#: << hvornår kører toget fra <1>>>
-
-#> hkt
-#: << hvornår kører toget fra Nordhavn>>
-
-
-! define (transport)
+! define (transportform)
 {
   tog (toget, togene):.
   bus (bussen, busser, busserne):.
@@ -195,53 +185,34 @@
 
 ! pattern (intent = afgår, type = spm)
 {
+  > hvornår %afgår {transport}
   > hvornår %afgår {transport} fra {start}
   > hvornår er næste afgang fra {start}
+  > hvornår er næste {transport} fra {start}
 }
 
 
-! pattern (intent = afgår, type = spm)
-{
-  > hvornår %afgår {transport}
-}
+> *
+: Hvis De har brug for hjælp til toget fra cBrain,
+  +: så har jeg adgang til Rejseplanen.
+  +: De kan bare spørge hvornår næste tog afgår.
 
 
 ### ---------------------------------------------------------------------------
-### Lookup departures from location
+### Find afgange fra station
 ### ---------------------------------------------------------------------------
 
->> afgår (transport:transport)
+>> afgår (transport:transportform)
 : <<hvornår kører <transport> fra Nordhavn>>
 
 >> afgår (start:sted)
 : <<hvornår kører toget fra <start> >>
 
->> afgår (transport:transport, start:sted)
+>> afgår (transport:transportform, start:sted)
 ! call Rejseplanen.FindNextDepartures($start, $transport)
 : Næste afgange fra <stop> er <result:{r |\
   <r.time> : <r.line> mod <r.direction>}>
-{empty}: jeg kunne desværre ikke finde nogen afgange.\
-Måske findes stoppestedet ikke?
-{error}: Æv, Rejseplanen er røget havet!
-
-
-
-### Default rule: assume departure from Nordhavn station (my daily station), but might as well have asked for it.
-#> hvornår %afgår * (%transportform)
-#: << hvornår kører <2> fra Nordhavn>>
-
-### Lookup train/bus/metro departure from stop
-#> hvornår %afgår * (%transportform) fra +
-#! call Rejseplanen.FindNextDepartures($3,$2)
-#: Næste afgange fra <stop> er <result:{r |\
-#  <r.time> : <r.line> mod <r.direction>}>
-#{empty}: jeg kunne desværre ikke finde nogen afgange.\
-#Måske findes stoppestedet ikke?
-#{error}: Æv, Rejseplanen er røget havet!
-
-#> hvornår %afgår * (%transportform) (mod|til) +
-#: << hvornår kører <2> fra Nordhavn>>
-
-#> hvornår %afgår * (%transportform) fra + (mod|til) +
-#: << hvornår kører <2> fra <3>>>
+{empty}: Jeg kunne desværre ikke finde nogen afgange.\
+       +: Måske findes stoppestedet ikke?
+{error}: Desværre, det kan jeg ikke svare på. Jeg kan ikke komme i kontakt med Rejseplanen.
 
