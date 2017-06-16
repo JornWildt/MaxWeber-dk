@@ -10,7 +10,6 @@
 }
 
 > *
-! weight 3
 : Vil De høre noget sjovt?
 : Hvad med en lille vittighed?
 ! answer
@@ -24,7 +23,21 @@
   : Jamen så må det blive en anden gang.
 }
 
+>> joke
+: Okay ...
+! continue at joke
+
 <joke>
 : Forfængelighed er et meget udbredt træk og sandsynligvis er ingen helt fri for det.\
 Især, blandt lærde og akademiske kredse, er det sådan en slags erhvervssygdom.
 : Politik er lavet med hovedet, ikke med de andre dele af kroppen. Eller sjælen. 
+: Det er kun politikere, der kan stå oprejst, uden at have en rygrad!
+: Den garvede politiker til sin nye unge kollega:
+  +: "Naturligvis er der ulemper ved demokratiet… vælgerne eksempelvis!!"
+: Jesus kommer ind på en bar i Skagen og spørger "Hvordan kommer jeg til Sverige?".
+  +: De andre bargæster svarer: "Du tager bare traktoren ud til grenen, så kan du jo gå resten af vejen!"
+: To præster diskuterede heftigt.
+  +: Til sidst sagde den ene forsonligt:
+  +: "Lad os ikke glemme, at vi trods vore forskelligheder begge arbejder for Herren. Du på din måde og jeg på hans."
+  
+  
